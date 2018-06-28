@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="themes/theme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<style>
+	/* #page1{
+		background-color: #ffc765;
+	} */
+	</style>
+</head>
+<body>
+
+<div data-role="page" id="page1" data-theme="a">
+
+	<header data-role="header">
+		<h1>Login</h1>
+	</header><!-- /header -->
+
+	<main role="main" class="ui-content">
+    <div class="">
+
+
+    <!-- Form 1 -->
+      <label for="text-basic">Username:</label>
+      <input type="text" name="text-basic" id="text-basic" value="">
+
+      <label for="text-basic">Password:</label>
+      <input type="text" name="text-basic" id="text-basic" value="">
+
+      <!-- Button -->
+
+      <a href="tutorial.html#tut1" class="ui-btn" rel="external" data-transition="slide">Login</a>
+      <button class="ui-btn"><a href="#page2" data-transition="slide">Create New Account</a></button>
+
+    </div>
+
+	</main><!-- /content -->
+
+	<footer data-role="footer">
+		<a href="#page2" data-transition="slide"> Create New Account </a>
+	</footer><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Page 2 -->
+
+<div data-role="page" id="page2" data-theme="a">
+
+	<header data-role="header">
+		<h1>Create New Account</h1>
+	</header><!-- /header -->
+
+	<main role="main" class="ui-content">
+
+    <!-- Form 1 -->
+    <div class="form-login">
+
+
+      <label for="text-basic">Username:</label>
+      <input type="text" name="text-basic" id="text-username" value="">
+
+      <label for="text-basic">Password:</label>
+      <input type="text" name="text-basic" id="text-password" value="">
+
+      <label for="text-basic">Email:</label>
+      <input type="text" name="text-basic" id="text-email" value="">
+
+
+
+			<form>
+
+    		<label>
+
+        	<input type="checkbox" name="checkbox-0 "><p>I agree to give all my private information to the application</p>
+    		</label>
+			</form>
+      <!-- button -->
+
+
+    </div>
+	</main><!-- /content -->
+
+	<footer data-role="footer">
+		<a href="#page1" data-transition="slide"> Login </a>
+	</footer><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>
