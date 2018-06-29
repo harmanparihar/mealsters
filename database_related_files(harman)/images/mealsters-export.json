@@ -1,0 +1,59 @@
+{
+  "meal" : [ null, {
+    "img_path" : "images/burger.jpg",
+    "ingredients" : "wheat, chicken, lettuce, mayonnaise  ",
+    "name" : "burger",
+    "res_name" : "Mcdonalds",
+    "res_tel" : "111-111-1111",
+    "website" : "www.mcdonals.com"
+  }, {
+    "img_path" : "images/pizza.jpg",
+    "ingredients" : "durum wheat, chicken, Pizza sauce  ",
+    "name" : "Pizza",
+    "res_name" : "Dominos",
+    "res_tel" : "111-111-1111",
+    "website" : "www.dominos.ca"
+  },{
+    "img_path" : "images/Ramen.jpg",
+    "ingredients" : "wheat, pork, vegetables  ",
+    "name" : "Ramen",
+    "res_name" : "Ramen Taka",
+    "res_tel" : "111-111-1111",
+    "website" : "www.ramentaka.ca"
+  },{
+    "img_path" : "images/icecream.jpg",
+    "ingredients" : "wheat, chicken, lettuce, mayonnaise  ",
+    "name" : "Ice Cream",
+    "res_name" : "Mcdonalds",
+    "res_tel" : "111-111-1111",
+    "website" : "www.mcdonals.com"
+  }, {
+    "img_path" : "images/egg.jpg",
+    "ingredients" : "durum wheat, chicken, Pizza sauce  ",
+    "name" : "Egg Salad",
+    "res_name" : "Dominos",
+    "res_tel" : "111-111-1111",
+    "website" : "www.dominos.ca"
+  },{
+    "img_path" : "images/pancakes.jpg",
+    "ingredients" : "wheat, pork, vegetables  ",
+    "name" : "Pancake",
+    "res_name" : "Ramen Taka",
+    "res_tel" : "111-111-1111",
+    "website" : "www.ramentaka.ca"
+  },{
+    "img_path" : "images/sushi.jpg",
+    "ingredients" : "wheat, pork, vegetables  ",
+    "name" : "Pancake",
+    "res_name" : "Ramen Taka",
+    "res_tel" : "111-111-1111",
+    "website" : "www.ramentaka.ca"
+  } ,{
+    "img_path" : "images/salad.jpg",
+    "ingredients" : "wheat, pork, vegetables  ",
+    "name" : "Pancake",
+    "res_name" : "Ramen Taka",
+    "res_tel" : "111-111-1111",
+    "website" : "www.ramentaka.ca"
+  }  ]
+}

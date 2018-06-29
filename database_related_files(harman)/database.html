@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        img{
+
+            max-width: 400px;
+            margin: auto;
+        }
+        body{
+            padding: 50px;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+    <!--including jquery cdn-->
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+
+
+    <!--including firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBZayjTcs5bvsak1T6HHlcgMo7Gwr6EKFI",
+            authDomain: "mealsters.firebaseapp.com",
+            databaseURL: "https://mealsters.firebaseio.com",
+            projectId: "mealsters",
+            storageBucket: "mealsters.appspot.com",
+            messagingSenderId: "300080109684"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <!--*****************************************************************************-->
+
+    <!--connecting Firebase code starts-->
+
+    <!--*****************************************************************************-->
+    <script>
+        $(function(){
+            let max=8;
+            let count=Math.floor(Math.random() * max) + 1;
+            $('button.next').click(function(evt) {
+                console.log("Button was clicked");
+                if(count!= max){
+                    count++;
+                }
+                else{
+                    count=1;
+                }
+                food_ref.on('child_added', function(data) {
+                    const key = data.key;
+                    const obj = data.val();
+                    console.log(key);
+                    console.log(obj);
+                    if(key==count) {
+                        let path = obj.img_path;
+                        let ing = obj.ingredients;
+                        $('img').attr("src", path);
+                        $('.ingredients').html(ing);
+                        $('.res_name').html(obj.res_name);
+                        $('.res_tel').html(obj.res_tel);
+                        $('.res_website').html(obj.website);
+                    }
+                });
+            });
+            console.log("outside the block");
+            const food_ref= firebase.database().ref('/meal');
+            console.log(food_ref);
+            food_ref.on('child_added', function(data) {
+                const key = data.key;
+                const obj = data.val();
+                console.log(key);
+                console.log(obj);
+                if(key==count) {
+                    let path = obj.img_path;
+                    let ing = obj.ingredients;
+                    $('img').attr("src", path);
+                    $('.ingredients').html(ing);
+                    $('.res_name').html(obj.res_name);
+                    $('.res_tel').html(obj.res_tel);
+                    $('.res_website').html(obj.website);
+                }
+            });
+        });
+    </script>
+    <title>Mealsters</title>
+</head>
+<body>
+    <div class="fooditem">
+        <div class="image">
+            <img alt="">
+        </div>
+        <div class="info">
+            <h3>Ingredients</h3>
+            <div class="ingredients">
+
+            </div>
+            <div class="res_info">
+                <h3>Restraunt Information</h3>
+                <div class="res_name">
+
+                </div>
+                <div class="res_tel">
+
+                </div>
+                <div class="res_website">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="next">Next</button>
+</body>
+</html>
