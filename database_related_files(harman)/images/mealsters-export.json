@@ -13,14 +13,14 @@
     "res_name" : "Dominos",
     "res_tel" : "111-111-1111",
     "website" : "www.dominos.ca"
-  },{
+  }, {
     "img_path" : "images/Ramen.jpg",
     "ingredients" : "wheat, pork, vegetables  ",
     "name" : "Ramen",
     "res_name" : "Ramen Taka",
     "res_tel" : "111-111-1111",
     "website" : "www.ramentaka.ca"
-  },{
+  }, {
     "img_path" : "images/icecream.jpg",
     "ingredients" : "wheat, chicken, lettuce, mayonnaise  ",
     "name" : "Ice Cream",
@@ -34,26 +34,44 @@
     "res_name" : "Dominos",
     "res_tel" : "111-111-1111",
     "website" : "www.dominos.ca"
-  },{
+  }, {
     "img_path" : "images/pancakes.jpg",
     "ingredients" : "wheat, pork, vegetables  ",
     "name" : "Pancake",
     "res_name" : "Ramen Taka",
     "res_tel" : "111-111-1111",
     "website" : "www.ramentaka.ca"
-  },{
+  }, {
     "img_path" : "images/sushi.jpg",
     "ingredients" : "wheat, pork, vegetables  ",
     "name" : "Pancake",
     "res_name" : "Ramen Taka",
     "res_tel" : "111-111-1111",
     "website" : "www.ramentaka.ca"
-  } ,{
+  }, {
     "img_path" : "images/salad.jpg",
     "ingredients" : "wheat, pork, vegetables  ",
     "name" : "Pancake",
     "res_name" : "Ramen Taka",
     "res_tel" : "111-111-1111",
     "website" : "www.ramentaka.ca"
-  }  ]
+  } ],
+  "users" : {
+    "1" : {
+      "password" : 123456,
+      "username" : "harman"
+    },
+    "2" : {
+      "password" : 654321,
+      "username" : "maggie"
+    },
+    "-LG8DAiY0O_Hwox09XIz" : {
+      "password" : "123",
+      "username" : "leo"
+    },
+    "-LG8GkkolAcUR7t_cIuC" : {
+      "password" : "123456",
+      "username" : "felipe"
+    }
+  }
 }
