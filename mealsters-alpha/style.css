@@ -1,0 +1,70 @@
+img {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.page-heading{
+  margin:10px;
+}
+div {
+    line-height: 2rem;
+}
+h3 {
+    line-height: 0.9rem;
+}
+button.next {
+    background-color: aquamarine;
+    height: 2rem;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+}
+body{
+  margin:0;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 720px;
+  height: 100vh;
+  align-content: center;
+}
+
+.logo{
+  margin: 30px auto;
+  width:100px;
+  height: auto;
+  align-content: flex-start;
+}
+.meta{
+  text-align: center;
+}
+form{
+
+  display:flex;
+  flex-direction: column;
+  width: 70vw;
+  max-width: 500px;
+  margin: 30px auto;
+}
+.submit{
+  grid-column: 1 / -1;
+}
+input, label, .submit{
+  padding: 10px;
+  border:1px solid black;
+  margin: 10px;
+}
+.error{
+  color:red;
+  padding-left:10px;
+}
+.passworderror{
+  color:red;
+  padding-left:10px;
+}
+.image{
+  text-align: center;
+}

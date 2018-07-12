@@ -1,45 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        img {
-            width: 100%;
-            max-width: 300px;
-            margin: auto;
-        }
-        body {
-
-            padding: 0;
-            margin: 0;
-            max-width: 300px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            font-family: Helvetica, sans-serif;
-
-        }
-        @media screen and (max-width: 500px) {
-            img {
-                max-width: 100%;
-            }
-            body {
-                max-width: 100%;
-            }
-
-        }
-        div {
-            line-height: 2rem;
-        }
-        h3 {
-            line-height: 0.9rem;
-        }
-        button.next {
-            background-color: aquamarine;
-            height: 2rem;
-            width: 100%;
-            font-family: Helvetica, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <!--including jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -118,6 +80,7 @@
     <title>Mealsters</title>
 </head>
 <body>
+  <div class="wrapper">
     <div class="fooditem">
         <div class="image">
             <img alt="">
@@ -142,6 +105,6 @@
             </div>
         </div>
     </div>
-
+</div>
 </body>
 </html>
