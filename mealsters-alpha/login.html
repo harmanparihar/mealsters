@@ -4,7 +4,7 @@
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-
+  <script type="text/javascript" src="hmac-md5.js"></script>
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -34,6 +34,7 @@
       event.preventDefault();
       let name= $("#username").val();
       let pass= $("#password").val();
+      pass=CryptoJS.MD5(pass).words[0];
       console.log(pass);
       user_ref.orderByChild("username").equalTo(name).once("value",snapshot => {
         const user = snapshot.val();
@@ -59,7 +60,7 @@
       });
 
 
-
+    
     })
   });
 

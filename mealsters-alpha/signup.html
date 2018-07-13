@@ -12,6 +12,9 @@
 
   <!--including firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script type="text/javascript" src="hmac-md5.js">
+
+  </script>
   <script>
   // Initialize Firebase
   var config = {
@@ -30,23 +33,36 @@
   $(function(){
     const user_ref= firebase.database().ref("/users");
     $('form.signup_form').submit(function (event) {
+      $(".error").html("");
+      $(".passworderror").html("");
       event.preventDefault();
       let name= $("#username").val();
       let pass= $("#password").val();
-
+      let repass=$("#password2").val();
+      console.log(pass.length);
+      if(pass.length<6){
+        $(".passwordlength").html("Password must be more than 6 characters!");
+      }
+      else{
       user_ref.orderByChild("username").equalTo(name).once("value",snapshot => {
         const user = snapshot.val();
         if (user){
           console.log("exists!");
           $(".error").html("Username already exists! Try a different one.");
         }else{
+          if(pass == repass){
+          pass=CryptoJS.MD5(pass).words[0]; //Creating MD5 hash for the password
           user_ref.push({username : name, password: pass});
           console.log("user added");
+          document.location.href = "login.html";
+          }
+          else{
+            console.log("password mismatch");
+            $(".passworderror").html("Passwords are not identical!");
+          }
         }
       });
-
-
-
+      }
     })
   });
 
@@ -62,7 +78,9 @@
       <input placeholder="Enter Email Id" type="text" id="username" required>
       <span class="error"></span>
       <input placeholder="Enter Password" type="password" id="password" required>
-      <input placeholder="Re-enter Your Password" type="password" id="password" required>
+      <span class="passwordlength"></span>
+      <input placeholder="Re-enter Your Password" type="password" id="password2" required>
+      <span class="passworderror"></span>
       <button type="submit" class="submit">Submit</button>
     </form>
 

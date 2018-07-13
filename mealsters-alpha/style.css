@@ -57,14 +57,12 @@ input, label, .submit{
   border:1px solid black;
   margin: 10px;
 }
-.error{
+.error, .passworderror, .passwordlength{
   color:red;
   padding-left:10px;
+  font-size: 0.9rem;
 }
-.passworderror{
-  color:red;
-  padding-left:10px;
-}
+
 .image{
   text-align: center;
 }
