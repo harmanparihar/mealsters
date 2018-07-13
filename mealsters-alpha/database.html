@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--including jquery cdn-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-
-
     <!--including firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script>
@@ -49,7 +47,7 @@
                     if(key==count) {
                         let path = obj.img_path;
                         let ing = obj.ingredients;
-                        $('img').attr("src", path);
+                        $('.img_space').attr("src", path);
                         $('.ingredients').html(ing);
                         $('.res_name').html(obj.res_name);
                         $('.res_tel').html(obj.res_tel);
@@ -80,10 +78,16 @@
     <title>Mealsters</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="main wrapper">
+    <header>
+      <nav>
+        <span class="menu"></span>
+        <h1>Mealsters</h1>
+      </nav>
+    </header>
     <div class="fooditem">
         <div class="image">
-            <img alt="">
+            <img class="img_space" alt="Food Image">
         </div>
         <button class="next">Next</button>
         <div class="info">
