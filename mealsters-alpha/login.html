@@ -16,20 +16,23 @@
 </head>
 <body>
   <div class="wrapper">
+    <div class="logo-container">
     <img class="logo" src="images/mealsters-vertical.png" alt="Logo">
+    </div>
     <form action="POST" class="signup_form">
-      <input placeholder="Email Id" type="text" id="username" required>
+      <input placeholder="Email Id" type="email" id="username" required>
       <span class="error"></span>
       <input placeholder="Password" type="password" id="password" required>
       <span class="passworderror"></span>
       <button type="submit" class="submit">Login</button>
+      <div class="meta">
+        <div><a href="signup.html">Forgot Your Password</a></div>
+        <div>
+          Don't have an account?
+          <div><a href="signup.html">Sign up</a></div>
+        </div>
     </form>
-    <div class="meta">
-      <div><a href="signup.html">Forgot Your Password</a></div>
-      <div>
-        Don't have an account?
-        <div><a href="signup.html">Sign up</a></div>
-      </div>
+
 
     </div>
   </div>

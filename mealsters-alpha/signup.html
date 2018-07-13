@@ -15,17 +15,19 @@
   <script src="js/signup.js"></script>
 </head>
 <body>
-  <div class="wrapper">
+  <div class="signup wrapper">
+    <div class="logo-container">
     <img class="logo" src="images/mealsters-vertical.png" alt="Logo">
+    </div>
     <form action="POST" class="signup_form">
-      <div class="page-heading">Sign Up</div>
-      <input placeholder="Enter Email Id" type="text" id="username" required>
+      <!-- <div class="page-heading">Sign Up Today</div> -->
+      <input placeholder="Enter Email Id" type="email" id="username" required>
       <span class="error"></span>
       <input placeholder="Enter Password" type="password" id="password" required>
       <span class="passwordlength"></span>
       <input placeholder="Re-enter Your Password" type="password" id="password2" required>
       <span class="passworderror"></span>
-      <button type="submit" class="submit">Submit</button>
+      <button type="submit" class="submit">Sign Up</button>
     </form>
 
   </div>
