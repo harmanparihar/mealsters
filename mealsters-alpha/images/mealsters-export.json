@@ -1,80 +1,90 @@
 {
   "meal" : [ null, {
     "img_path" : "images/burger.jpg",
-    "ingredients" : "ground beef, cheese, wheat, lettuce, cucumber, tomato, onion  ",
+    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato,onion  ",
     "name" : "Burger",
-    "res_name" : "Mcdonalds",
+    "price" : "$10.95",
+    "res_name" : "Wally's Burgers",
     "res_tel" : "+16044342930",
     "res_address" : "2661 E49th Avenue, Vancouver, BC V5S1J9",
     "website" : "http://www.wallysburgers.ca"
   }, {
     "img_path" : "images/pizza.jpg",
-    "ingredients" : "cheese, wheat dough, tomato sauce, onion, mushroom, pepperoni,  ",
+    "ingredients" : "cheese,wheat dough,tomato sauce,onion,mushroom,pepperoni  ",
     "name" : "Pizza",
+    "price" : "$12.95",
     "res_name" : "Pizzeria Farina",
     "res_tel" : "+16046819334",
     "res_address" : "915 Main Street, Vancouver, BC V6A2V8",
     "website" : "http://www.pizzeriafarina.com"
   }, {
     "img_path" : "images/avocado-toast.jpg",
-    "ingredients" : "avocado, egg, wheat, black pepper, cilantro  ",
+    "ingredients" : "avocado,egg,gluten,veggie,black pepper,cilantro  ",
     "name" : "Avocado toast",
+    "price" : "$11.25",
     "res_name" : "Avocado Bay",
     "res_tel" : "+16045683437",
     "res_address" : "1184 Denman Street, Vancouver, BC V6G2M9",
     "website" : "http://www.avocadobay.com"
   }, {
     "img_path" : "images/nachos.jpg",
-    "ingredients" : "ground beef, bean, cheese, sour cream, scallion  ",
+    "ingredients" : "ground beef,bean,cheese,sour cream,scallion  ",
     "name" : "Nachos",
+    "price" : "$15.90",
     "res_name" : "Bandidas Taqueria",
     "res_tel" : "+16045688224",
     "res_address" : "2781 Commercial Drive, Vancouver, BC V5N4C5",
     "website" : "https://www.bandidastaqueria.com"
   }, {
     "img_path" : "images/noodles.jpg",
-    "ingredients" : "flour, shrimp, egg, coriander, chili, onion,  ",
+    "ingredients" : "flour,shrimp,egg,coriander,spicy,onion  ",
     "name" : "Noodles",
+    "price" : "$11.90",
     "res_name" : "Legendary Noodle",
     "res_tel" : "+16046698551",
     "res_address" : "1074 Denman Street, Vancouver, BC V6G2M8",
     "website" : "https://www.legendarynoodle.ca"
   }, {
     "img_path" : "images/pancakes.jpg",
-    "ingredients" : "wheat, baking powder, maple syrup, nuts, strawberry, blueberry  ",
+    "ingredients" : "wheat,veggie,maple syrup,nuts,strawberry,blueberry  ",
     "name" : "Pancakes",
+    "price" : "$9.99",
     "res_name" : "Medina",
     "res_tel" : "+16048793114",
     "res_address" : "780 Richards Street, Vancouver, BC V6B3A4",
     "website" : "http://www.medinacafe.com"
   }, {
     "img_path" : "images/paella.jpg",
-    "ingredients" : "risotto rice, sea food, chicken, tomato, thyme, parsley  ",
+    "ingredients" : "risotto rice,sea food,chicken,tomato,thyme,parsley  ",
     "name" : "Paella",
-    "res_name" : "Espana Restaurant",
+    "price" : "$16.90",
+    "res_name" : "Espana",
     "res_tel" : "+16045584040",
     "res_address" : "1118 Denman Street, Vancouver, BC V6G1T2",
     "website" : "http://www.espanarestaurant.ca/"
   }, {
     "img_path" : "images/pasta.jpg",
-    "ingredients" : "wheat, durum, egg, spinach, pesto, parmesan  ",
+    "ingredients" : "gluten,egg,spinach,pesto,parmesan  ",
     "name" : "Pasta",
+    "price" : "$13.95",
     "res_name" : "Zefferelli's",
     "res_tel" : "+16046870655",
     "res_address" : "1136 Robson Street, Vancouver, BC V6E1B2",
     "website" : "http://zefferellis.com"
   }, {
     "img_path" : "images/spaghetti.jpg",
-    "ingredients" : "ground beef, tomato, oregano, celery, margarine  ",
+    "ingredients" : "ground beef,tomato,oregano,celery,margarine  ",
     "name" : "Spaghetti",
+    "price" : "$14.50",
     "res_name" : "Tavola",
     "res_tel" : "+16046064680",
     "res_address" : "1829 Robson Street, Vancouver, BC V6G1E4",
     "website" : "https://tavolavancouver.com"
   }, {
     "img_path" : "images/steak.jpg",
-    "ingredients" : "beef, thyme, black pepper, broccoli, mashed potato ",
+    "ingredients" : "beef,thyme,black pepper,gluten,broccoli,mashed potato ",
     "name" : "Steak",
+    "price" : "$18.50",
     "res_name" : "Fable Kitchen",
     "res_tel" : "+16047321322",
     "res_address" : "1944 W4th Avenue, Vancouver, BC V6J1M5",
