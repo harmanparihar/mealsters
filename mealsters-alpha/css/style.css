@@ -190,7 +190,6 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 .info .ingredients span {
@@ -252,8 +251,20 @@ input:focus {
     padding: 0;
 }
 
-.res_info .res_name {
+.res_info>* {
+    padding: 0 2rem;
+    font-size: .8rem;
+    color: #ababab; /* black lighter */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     height: 130px;
+    border-bottom: 1px solid #ababab;
+}
+
+.res_info .res_name {
+    /* height: 130px; */
     font-size: 1.5rem;
     background: rgba(0,0,0,0.5) url('../images/res_bg.jpg') center;
     background-blend-mode: color;
@@ -262,8 +273,22 @@ input:focus {
     border-top-right-radius: 10px;
     color: white;
     font-weight: 600;
-    padding: 0 2rem;
     line-height: 8;
+}
+
+.res_info .res_review {
+}
+
+.res_info img {
+    vertical-align: middle;
+}
+
+.res_info .res_address_text, .res_info .res_hour_text {
+    text-align: right;
+}
+
+.res_info .res_address_text span {
+    display: block;
 }
 
 

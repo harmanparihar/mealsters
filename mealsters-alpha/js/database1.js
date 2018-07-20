@@ -26,6 +26,11 @@ $(function(){
                 $('.res_name').html(obj.res_name);
                 $('.res_tel').attr("href", `tel:${obj.res_tel}`);
                 $('.res_website').attr("href", obj.website);
+                let add = obj.res_address.split(',');
+                $('.res_address_text').html('');
+                for (let item of add) {
+                    $('.res_address_text').append(`<span>${item}</span>`);
+                }
             }
         });
     });
@@ -54,6 +59,11 @@ $(function(){
                 $('.res_name').html(obj.res_name);
                 $('.res_tel').attr("href", `tel:${obj.res_tel}`);
                 $('.res_website').attr("href", obj.website);
+                let add = obj.res_address.split(',');
+                $('.res_address_text').html('');
+                for (let item of add) {
+                    $('.res_address_text').append(`<span>${item}</span>`);
+                }
             }
         });
     });
@@ -77,6 +87,11 @@ $(function(){
             $('.res_name').html(obj.res_name);
             $('.res_tel').attr("href", `tel:${obj.res_tel}`);
             $('.res_website').attr("href", obj.website);
+            let add = obj.res_address.split(',');
+            $('.res_address_text').html('');
+            for (let item of add) {
+                $('.res_address_text').append(`<span>${item}</span>`);
+            }
         }
     });
 });
