@@ -1,7 +1,7 @@
 {
   "meal" : [ null, {
     "img_path" : "images/burger.jpg",
-    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato,onion  ",
+    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato,onion",
     "name" : "Burger",
     "price" : "$10.95",
     "res_name" : "Wally's Burgers",
@@ -10,7 +10,7 @@
     "website" : "http://www.wallysburgers.ca"
   }, {
     "img_path" : "images/pizza.jpg",
-    "ingredients" : "cheese,wheat dough,tomato sauce,onion,mushroom,pepperoni  ",
+    "ingredients" : "cheese,wheat dough,tomato sauce,onion,mushroom,pepperoni",
     "name" : "Pizza",
     "price" : "$12.95",
     "res_name" : "Pizzeria Farina",
@@ -19,7 +19,7 @@
     "website" : "http://www.pizzeriafarina.com"
   }, {
     "img_path" : "images/avocado-toast.jpg",
-    "ingredients" : "avocado,egg,gluten,veggie,black pepper,cilantro  ",
+    "ingredients" : "avocado,egg,gluten,veggie,black pepper,cilantro",
     "name" : "Avocado toast",
     "price" : "$11.25",
     "res_name" : "Avocado Bay",
@@ -28,7 +28,7 @@
     "website" : "http://www.avocadobay.com"
   }, {
     "img_path" : "images/nachos.jpg",
-    "ingredients" : "ground beef,bean,cheese,sour cream,scallion  ",
+    "ingredients" : "ground beef,bean,cheese,sour cream,scallion",
     "name" : "Nachos",
     "price" : "$15.90",
     "res_name" : "Bandidas Taqueria",
@@ -37,7 +37,7 @@
     "website" : "https://www.bandidastaqueria.com"
   }, {
     "img_path" : "images/noodles.jpg",
-    "ingredients" : "flour,shrimp,egg,coriander,spicy,onion  ",
+    "ingredients" : "flour,shrimp,egg,coriander,spicy,onion",
     "name" : "Noodles",
     "price" : "$11.90",
     "res_name" : "Legendary Noodle",
@@ -46,7 +46,7 @@
     "website" : "https://www.legendarynoodle.ca"
   }, {
     "img_path" : "images/pancakes.jpg",
-    "ingredients" : "wheat,veggie,maple syrup,nuts,strawberry,blueberry  ",
+    "ingredients" : "wheat,veggie,maple syrup,nuts,strawberry,blueberry",
     "name" : "Pancakes",
     "price" : "$9.99",
     "res_name" : "Medina",
@@ -55,7 +55,7 @@
     "website" : "http://www.medinacafe.com"
   }, {
     "img_path" : "images/paella.jpg",
-    "ingredients" : "risotto rice,sea food,chicken,tomato,thyme,parsley  ",
+    "ingredients" : "risotto rice,sea food,chicken,tomato,thyme,parsley",
     "name" : "Paella",
     "price" : "$16.90",
     "res_name" : "Espana",
@@ -64,7 +64,7 @@
     "website" : "http://www.espanarestaurant.ca/"
   }, {
     "img_path" : "images/pasta.jpg",
-    "ingredients" : "gluten,egg,spinach,pesto,parmesan  ",
+    "ingredients" : "gluten,egg,spinach,pesto,parmesan",
     "name" : "Pasta",
     "price" : "$13.95",
     "res_name" : "Zefferelli's",
@@ -73,7 +73,7 @@
     "website" : "http://zefferellis.com"
   }, {
     "img_path" : "images/spaghetti.jpg",
-    "ingredients" : "ground beef,tomato,oregano,celery,margarine  ",
+    "ingredients" : "ground beef,tomato,oregano,celery,margarine",
     "name" : "Spaghetti",
     "price" : "$14.50",
     "res_name" : "Tavola",
@@ -82,7 +82,7 @@
     "website" : "https://tavolavancouver.com"
   }, {
     "img_path" : "images/steak.jpg",
-    "ingredients" : "beef,thyme,black pepper,gluten,broccoli,mashed potato ",
+    "ingredients" : "beef,thyme,black pepper,gluten,broccoli,mashed potato",
     "name" : "Steak",
     "price" : "$18.50",
     "res_name" : "Fable Kitchen",
