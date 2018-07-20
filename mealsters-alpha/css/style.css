@@ -190,6 +190,8 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .info .ingredients span {
@@ -209,8 +211,10 @@ input:focus {
     display: flex;
     align-items: baseline;
     color: #7359ff; /* blue dark */
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .info .price:before {
@@ -218,11 +222,13 @@ input:focus {
     font-size: .8rem;
     color: #ababab; /* black lighter */
     flex-grow: 1;
+    font-weight: 400;
 }
 
 .info .price:after {
     content: "+ TAXES";
     font-size: .8rem;
+    font-weight: 400;
     color: #ababab; /* black lighter */
 }
 
