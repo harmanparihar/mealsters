@@ -22,10 +22,6 @@
 /*                                        */
 /* by: Maggie                             */
 /******************************************/
-.fooditem {
-  background: #f2f2f2;
-}
-
 .info > * {
   background-color: white;
   margin: .5rem;
@@ -58,7 +54,7 @@
 }
 
 .info {
-  display: none;
+  display: block;
 }
 
 .info .price {
@@ -154,24 +150,36 @@
 /******************************************/
 /*           end of internal page         */
 /******************************************/
-.img_space {
-  height: 65vh;
-  border-radius: 25px;
-  width: 100%;
-  object-fit: cover;
-  margin: 50px auto 0 auto;
-  object-position: bottom;
+body {
+  margin: 0;
+  /* background-image: url("../images/salad.jpg"), linear-gradient(#ffa800, #f2398e); */
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to left, rgba(255, 168, 0, 0.8), rgba(242, 57, 142, 0.8)), url("../images/salad.jpg");
+  background-size: cover;
+  min-height: 100vh;
 }
 
-.menu_icon {
-  text-align: left;
-  font-family: 'Asap', sans-serif;
-  padding-top: 30px;
-  color: white;
-  opacity: 1;
-  align-self: center;
-  font-weight: 400;
-  font-size: 3.8rem;
+.main .wrapper {
+  height: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 720px;
+  height: 100vh;
+  align-content: flex-start;
+}
+
+.logo {
+  margin: 0px auto;
+  margin-bottom: -70px;
+  width: 100px;
+  height: auto;
+  align-self: flex-end;
 }
 
 .logo-container {
@@ -191,91 +199,6 @@
 
 .signup .logo-container {
   top: -116px;
-}
-
-.page-heading {
-  margin: 10px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-
-h3 {
-  line-height: 0.9rem;
-}
-
-button.next {
-  background-color: aquamarine;
-  height: 2rem;
-  width: 100%;
-  font-family: 'Asap', sans-serif;
-}
-
-body {
-  margin: 0;
-  /* background-image: url("../images/salad.jpg"), linear-gradient(#ffa800, #f2398e); */
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to left, rgba(255, 168, 0, 0.8), rgba(242, 57, 142, 0.8)), url("../images/salad.jpg");
-  background-size: cover;
-  min-height: 100vh;
-}
-
-body.main {
-  background-color: white;
-  color: black;
-  background: linear-gradient(to top, white, transparent 50%), linear-gradient(to left, #f2398e, #ffa800);
-  background-size: 100vw 30vh, 100vw 30vh;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-.main .wrapper {
-  height: auto;
-}
-
-/* header{
-  background: linear-gradient(to left, rgba(255, 168, 0,0.8), rgba(242, 57, 142,0.8));
-
-} */
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  max-width: 100%;
-  height: 100vh;
-  align-content: flex-start;
-}
-
-.main h1 {
-  font-family: 'Asap', sans-serif;
-  padding-top: 30px;
-  text-align: center;
-  color: white;
-  opacity: 1;
-  font-weight: 400;
-  font-size: 3.8rem;
-}
-
-.logo {
-  margin: 0px auto;
-  margin-bottom: -70px;
-  width: 100px;
-  height: auto;
-  align-self: flex-end;
-}
-
-.meta {
-  text-align: center;
-  font-size: 0.9rem;
-  color: rgba(250, 250, 250, 0.8);
-}
-
-.meta div {
-  padding: 10px;
-  line-height: 0.9rem;
 }
 
 form {
@@ -319,10 +242,6 @@ input, label, .submit {
   font-size: 0.9rem;
 }
 
-.image {
-  text-align: center;
-}
-
 a {
   text-decoration: none;
   color: rgba(250, 250, 250, 0.8);
@@ -337,42 +256,106 @@ input:focus {
   margin-top: -50px;
 }
 
-nav ul {
-  margin: 150px 0 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  list-style-type: none;
+.meta {
   text-align: center;
-  height: 50px;
+  font-size: 0.9rem;
+  color: rgba(250, 250, 250, 0.8);
 }
 
-nav ul li img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  border-radius: 0;
+.meta div {
+  padding: 10px;
+  line-height: 0.9rem;
 }
 
-header nav {
+/******************************************/
+/*                                        */
+/* INTERNAL PAGE (Main Page) */
+/*                                        */
+/******************************************/
+/* Modifications: styling                 */
+/*                                        */
+/* by: Felipe                             */
+/******************************************/
+body.main {
+  color: black;
+  background: linear-gradient(to top, white, transparent 50%), linear-gradient(to right, #f2398e, #ffa800);
+  background-size: 100vw 30vh, 100vw 30vh;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+/*******************************/
+/* Header                      */
+/*******************************/
+.main header {
+  width: 80vw;
+  margin: 40px auto 20px auto;
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.main header nav {
+  grid-column: 1;
+  justify-self: left;
+  align-self: center;
+}
+.main header nav i {
+  color: white;
+  font-size: 1.5rem;
+}
+.main header h1 {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  grid-column: 2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: .2rem;
 }
 
-.your-class {
-  width: 100%;
-  margin: auto;
-  padding-top: 30%;
-}
-
-.your-class > div {
+/*******************************/
+/* Ingredients                 */
+/*******************************/
+.ingredients {
   position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.your-class > div h2 {
+.ingredients a {
+  color: white;
+  background-color: #a493ff;
+  padding: .5rem 1rem;
+  margin: 0 .3rem;
+  border-radius: 2rem;
+  display: block;
+}
+
+/*******************************/
+/* Main Navigation Bottom      */
+/*******************************/
+.main-nav-bottom {
+  width: 80vw;
+  border-top: 3px solid #FFE8D7;
+  margin: 0 auto;
+}
+
+.fooditem {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.fooditem > div {
+  position: relative;
+  height: 68vh;
+}
+.fooditem > div h2 {
   position: absolute;
   width: 70vw;
   display: flex;
-  bottom: 10px;
+  bottom: 5rem;
   padding: 0 20px;
   color: white;
   font-weight: bold;
@@ -381,7 +364,7 @@ header nav {
 
 img {
   max-width: 100%;
-  height: 60vh;
+  height: 55vh;
   object-fit: cover;
 }
 
@@ -389,10 +372,11 @@ img {
   opacity: 0.7;
   border-radius: 2%;
   transform: scale(0.85);
-  filter: blur(2px);
+  filter: blur(1px);
   animation-name: toNormal;
   animation-duration: .3s;
   animation-iteration-count: 1;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.6));
 }
 
 .slick-active img {
@@ -402,6 +386,7 @@ img {
   animation-name: toActive;
   animation-duration: .3s;
   animation-iteration-count: 1;
+  filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.3));
 }
 
 .slick-slide h2 {
@@ -433,21 +418,74 @@ img {
 @keyframes toActive {
   0% {
     transform: scale(0.85);
-    filter: blur(2px);
+    filter: blur(1px);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.6));
   }
   100% {
     transform: scale(1);
     filter: blur(0);
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.3));
   }
 }
 @keyframes toNormal {
   0% {
     transform: scale(1);
     filter: blur(0);
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.3));
   }
   100% {
     transform: scale(0.85);
     filter: blur(2px);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.6));
+  }
+}
+/*******************************/
+/* ingredients animation       */
+/*******************************/
+.slick-slide .ingredients a {
+  opacity: 0;
+}
+
+.slick-active .ingredients a {
+  opacity: 1;
+  animation-name: toActiveIngredients;
+  animation-duration: .55s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier();
+}
+.slick-active .ingredients a:nth-of-type(2) {
+  opacity: 1;
+  animation-name: toActiveIngredients;
+  animation-duration: .65s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier();
+}
+.slick-active .ingredients a:nth-of-type(3) {
+  opacity: 1;
+  animation-name: toActiveIngredients;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier();
+}
+.slick-active .ingredients a:nth-of-type(4) {
+  opacity: 1;
+  animation-name: toActiveIngredients;
+  animation-duration: .85s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier();
+}
+
+@keyframes toActiveIngredients {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
 

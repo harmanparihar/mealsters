@@ -7,7 +7,10 @@
     <!------------------------------->
     <link rel="stylesheet" href="css/style.css">
 
-    
+
+    <!------------------------------->
+    <!-- font awesome --------------->
+    <!------------------------------->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
@@ -33,106 +36,175 @@
     <!------------------------------->
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 
+    <!-- carousel personal configs -->
     <script src="js/main-carousel.js"></script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- jQuery Migrate - not sure if we need for carousel -->
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
 
+    <!-- carousel library -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <title>Mealsters</title>
 </head>
 <body class="main">
 
+
+    <header>
+        <nav>
+            <i class="menu_icon fas fa-bars"></i>
+        </nav>
+        <h1>Mealsters</h1>
+    </header>
+
     <!------------------------------->
     <!-- carousel structure: slick -->
     <!------------------------------->
-    <div class="your-class">
+    <div class="fooditem">
         <div><img src="1.jpg" alt="">
-        <h2>Delicious Nachos</h2>
+            <h2>Delicious Nachos</h2>
+
+            <div class="ingredients">
+                <a href="#">add</a>
+                <a href="#">something</a>
+                <a href="#">cool</a>
+                <a href="#">here</a>
+
+            </div>
         </div>
         <div>
             <img src="2.jpg" alt="">
-            <h2>Ceaser Salad</h2>
+            <h2>Just a Regular Ceaser Salad with Chicken</h2>
+
+            <div class="ingredients">
+                <a href="#">add</a>
+                <a href="#">something</a>
+                <a href="#">cool</a>
+
+            </div>
         </div>
         <div>
             <img src="3.jpg" alt="">
             <h2>Smoke & Pepper Burger</h2>
+
+            <div class="ingredients">
+                <a href="#">add</a>
+                <a href="#">something</a>
+                <a href="#">cool</a>
+                <a href="#">here</a>
+
+            </div>
         </div>
     </div>
     <!-- end of carousel structure -->
 
-    <div class="wrapper">
-        <header>
-            <nav>
-                <i class="menu_icon fas fa-bars"></i>
-                <h1>Mealsters</h1>
-            </nav>
-        </header>
-        <nav>
-            <ul>
-                <li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
-                <li><img src="images/Assets/info-icon.png" alt=""></li>
-                <li><img src="images/Assets/favorite-icon.png" alt=""></li>
-                <li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
-            </ul>
-        </nav>
+    <nav class="main-nav-bottom">
 
-        <div class="fooditem">
-            <div class="image">
-                <img class="img_space" alt="Food Image" src="images/burger.jpg">
-            </div>
-            <div class="info">
-                <div class="ingredients"></div>
+    </nav>
 
-                <div class="price">$13.95</div>
 
-                <div class="res_call">
-                    <a class="res_tel"><img src="images/Assets/phone-icon.png"><br>TELEPHONE</a>
-                    <a class="res_website"><img src="images/Assets/website-icon.png"><br>WEBSITE</a>
-                </div>
 
-                <div class="res_info">
-                    <h3 class="res_name"></h3>
-                    <div class="res_review">
-                        <div class="res_review_icon">
-                            <img src="images/Assets/review-icon.png" alt=""> REVIEW
-                        </div>
-                        <div class="">
-                            <img src="images/Assets/favorite-icon.png" alt="">
-                            <img src="images/Assets/favorite-icon.png" alt="">
-                            <img src="images/Assets/favorite-icon.png" alt="">
-                            <img src="images/Assets/favorite-icon.png" alt="">
-                            <img src="images/Assets/favorite-icon.png" alt="">
-                        </div>
 
-                    </div>
 
-                    <div class="res_address">
-                        <div class="res_address_icon">
-                            <img src="images/Assets/address-icon.png" alt=""> ADDRESS
-                        </div>
 
-                        <div class="res_address_text">
 
-                        </div>
 
-                    </div>
 
-                    <div class="res_hour">
-                        <div class="res_hour_icon">
-                            <img src="images/Assets/hour-icon.png" alt=""> HOUR
-                        </div>
-                        <div class="res_hour_text">
-                            Opened<br>11:20 - 22:20
-                        </div>
 
-                    </div>
 
-                </div>
-            </div>
-        </div>
 
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="wrapper">
+
+
+    <nav>
+    <ul>
+    <li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
+    <li><img src="images/Assets/info-icon.png" alt=""></li>
+    <li><img src="images/Assets/favorite-icon.png" alt=""></li>
+    <li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
+</ul>
+</nav>
+
+<div class="fooditem">
+
+<div class="image">
+<img class="img_space" alt="Food Image" src="images/burger.jpg">
+</div>
+<div class="info">
+<div class="ingredients"></div>
+
+<div class="price">$13.95</div>
+
+<div class="res_call">
+<a class="res_tel"><img src="images/Assets/phone-icon.png"><br>TELEPHONE</a>
+<a class="res_website"><img src="images/Assets/website-icon.png"><br>WEBSITE</a>
+</div>
+
+<div class="res_info">
+<h3 class="res_name"></h3>
+<div class="res_review">
+<div class="res_review_icon">
+<img src="images/Assets/review-icon.png" alt=""> REVIEW
+</div>
+<div class="">
+<img src="images/Assets/favorite-icon.png" alt="">
+<img src="images/Assets/favorite-icon.png" alt="">
+<img src="images/Assets/favorite-icon.png" alt="">
+<img src="images/Assets/favorite-icon.png" alt="">
+<img src="images/Assets/favorite-icon.png" alt="">
+</div>
+
+</div>
+
+<div class="res_address">
+<div class="res_address_icon">
+<img src="images/Assets/address-icon.png" alt=""> ADDRESS
+</div>
+
+<div class="res_address_text">
+
+</div>
+
+</div>
+
+<div class="res_hour">
+<div class="res_hour_icon">
+<img src="images/Assets/hour-icon.png" alt=""> HOUR
+</div>
+<div class="res_hour_text">
+Opened<br>11:20 - 22:20
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div> -->
 
 
 

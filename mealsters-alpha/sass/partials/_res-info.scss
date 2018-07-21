@@ -9,7 +9,7 @@
 /******************************************/
 
 .fooditem {
-    background: #f2f2f2;
+    // background: #f2f2f2;
 }
 
 .info>* {
@@ -45,7 +45,7 @@
 }
 
 .info {
-    display: none;
+    display: block;
 }
 
 .info .price {

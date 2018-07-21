@@ -1,6 +1,6 @@
 $(function() {
 
-    $('.your-class').slick({
+    $('.fooditem').slick({
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 1,
