@@ -1,7 +1,7 @@
 {
   "meal" : [ null, {
     "img_path" : "images/smoked-burger.jpg",
-    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato",
+    "ingredients" : "beef,cheese,gluten,lettuce,spicy,tomato",
     "name" : "Smoked Burger",
     "price" : "$10.95",
     "res_name" : "Wally's Burgers",
@@ -28,7 +28,7 @@
     "website" : "http://www.avocadobay.com"
   }, {
     "img_path" : "images/nachos.jpg",
-    "ingredients" : "mexican,ground beef,bean,cheese,sour cream,scallion",
+    "ingredients" : "mexican,beef,bean,cheese,sour cream,scallion",
     "name" : "Nachos",
     "price" : "$15.90",
     "res_name" : "Bandidas Taqueria",
@@ -73,7 +73,7 @@
     "website" : "http://zefferellis.com"
   }, {
     "img_path" : "images/spaghetti.jpg",
-    "ingredients" : "italian,ground beef,tomato,oregano,celery",
+    "ingredients" : "italian,beef,tomato,oregano,celery",
     "name" : "Spaghetti",
     "price" : "$14.50",
     "res_name" : "Tavola",
@@ -91,7 +91,7 @@
     "website" : "http://www.fablekitchen.ca"
   }, {
     "img_path" : "images/chicken-curry.jpg",
-    "ingredients" : "indian,curry,vegan,naan,gluten,",
+    "ingredients" : "indian,curry,vegan,naan,gluten,spicy",
     "name" : "Chicken Curry",
     "price" : "$13.20",
     "res_name" : "Indian Bay Leaf",
@@ -145,7 +145,7 @@
     "website" : "http://www.medinacafe.com"
   }, {
     "img_path" : "images/three-bean-curry.jpg",
-    "ingredients" : "indian,curry,bean,vegan,gluten,rice,tomato",
+    "ingredients" : "indian,curry,bean,vegan,gluten,rice,spicy",
     "name" : "Three Bean Curry",
     "price" : "$9.90",
     "res_name" : "Indian Bay Leaf",
@@ -163,7 +163,7 @@
     "website" : "http://zefferellis.com"
   }, {
     "img_path" : "images/buffalo-burger.jpg",
-    "ingredients" : "buffalo,cheese,fries,wheat,lettuce",
+    "ingredients" : "buffalo,cheese,spicy,fries,wheat,lettuce",
     "name" : "Buffalo Burger",
     "price" : "$11.75",
     "res_name" : "Wally's Burgers",
