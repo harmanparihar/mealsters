@@ -1,8 +1,8 @@
 {
   "meal" : [ null, {
-    "img_path" : "images/burger.jpg",
-    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato,onion",
-    "name" : "Burger",
+    "img_path" : "images/smoked-burger.jpg",
+    "ingredients" : "ground beef,cheese,gluten,lettuce,spicy,tomato",
+    "name" : "Smoked Burger",
     "price" : "$10.95",
     "res_name" : "Wally's Burgers",
     "res_tel" : "+16044342930",
@@ -10,7 +10,7 @@
     "website" : "http://www.wallysburgers.ca"
   }, {
     "img_path" : "images/pizza.jpg",
-    "ingredients" : "cheese,wheat dough,tomato sauce,onion,mushroom,pepperoni",
+    "ingredients" : "italian,cheese,wheat dough,tomato sauce,pepperoni",
     "name" : "Pizza",
     "price" : "$12.95",
     "res_name" : "Pizzeria Farina",
@@ -19,7 +19,7 @@
     "website" : "http://www.pizzeriafarina.com"
   }, {
     "img_path" : "images/avocado-toast.jpg",
-    "ingredients" : "avocado,egg,gluten,veggie,black pepper,cilantro",
+    "ingredients" : "avocado,egg,gluten,vegan,black pepper,cilantro",
     "name" : "Avocado toast",
     "price" : "$11.25",
     "res_name" : "Avocado Bay",
@@ -28,7 +28,7 @@
     "website" : "http://www.avocadobay.com"
   }, {
     "img_path" : "images/nachos.jpg",
-    "ingredients" : "ground beef,bean,cheese,sour cream,scallion",
+    "ingredients" : "mexican,ground beef,bean,cheese,sour cream,scallion",
     "name" : "Nachos",
     "price" : "$15.90",
     "res_name" : "Bandidas Taqueria",
@@ -37,7 +37,7 @@
     "website" : "https://www.bandidastaqueria.com"
   }, {
     "img_path" : "images/noodles.jpg",
-    "ingredients" : "flour,shrimp,egg,coriander,spicy,onion",
+    "ingredients" : "japanese,noodles,shrimp,egg,coriander,spicy",
     "name" : "Noodles",
     "price" : "$11.90",
     "res_name" : "Legendary Noodle",
@@ -46,7 +46,7 @@
     "website" : "https://www.legendarynoodle.ca"
   }, {
     "img_path" : "images/pancakes.jpg",
-    "ingredients" : "wheat,veggie,maple syrup,nuts,strawberry,blueberry",
+    "ingredients" : "vegan,wheat,maple syrup,nuts,strawberry,blueberry",
     "name" : "Pancakes",
     "price" : "$9.99",
     "res_name" : "Medina",
@@ -55,7 +55,7 @@
     "website" : "http://www.medinacafe.com"
   }, {
     "img_path" : "images/paella.jpg",
-    "ingredients" : "risotto rice,sea food,chicken,tomato,thyme,parsley",
+    "ingredients" : "spanish,risotto rice,sea food,chicken,tomato,thyme,parsley",
     "name" : "Paella",
     "price" : "$16.90",
     "res_name" : "Espana",
@@ -64,7 +64,7 @@
     "website" : "http://www.espanarestaurant.ca/"
   }, {
     "img_path" : "images/pasta.jpg",
-    "ingredients" : "gluten,egg,spinach,pesto,parmesan",
+    "ingredients" : "italian,gluten,egg,spinach,pesto,parmesan",
     "name" : "Pasta",
     "price" : "$13.95",
     "res_name" : "Zefferelli's",
@@ -73,7 +73,7 @@
     "website" : "http://zefferellis.com"
   }, {
     "img_path" : "images/spaghetti.jpg",
-    "ingredients" : "ground beef,tomato,oregano,celery,margarine",
+    "ingredients" : "italian,ground beef,tomato,oregano,celery",
     "name" : "Spaghetti",
     "price" : "$14.50",
     "res_name" : "Tavola",
@@ -85,6 +85,97 @@
     "ingredients" : "beef,thyme,black pepper,gluten,broccoli,mashed potato",
     "name" : "Steak",
     "price" : "$18.50",
+    "res_name" : "Fable Kitchen",
+    "res_tel" : "+16047321322",
+    "res_address" : "1944 W4th Avenue,Vancouver,BC V6J1M5",
+    "website" : "http://www.fablekitchen.ca"
+  }, {
+    "img_path" : "images/chicken-curry.jpg",
+    "ingredients" : "indian,curry,vegan,naan,gluten,",
+    "name" : "Chicken Curry",
+    "price" : "$13.20",
+    "res_name" : "Indian Bay Leaf",
+    "res_tel" : "+16043360350",
+    "res_address" : "4890 Victoria Drive,Vancouver,BC V5N4P5",
+    "website" : "http://bayleafindiancuisine.com/"
+  }, {
+    "img_path" : "images/pho.jpg",
+    "ingredients" : "noodles,vietnamese,chicken,spicy,soup",
+    "name" : "Pho",
+    "price" : "$12.75",
+    "res_name" : "Legendary Noodle",
+    "res_tel" : "+16046698551",
+    "res_address" : "1074 Denman Street,Vancouver,BC V6G2M8",
+    "website" : "https://www.legendarynoodle.ca"
+  }, {
+    "img_path" : "images/stewed-meat.jpg",
+    "ingredients" : "pork,malaysian,ribs,spicy,cinnamon",
+    "name" : "Stewed Meat",
+    "price" : "$16.25",
+    "res_name" : "Tropika",
+    "res_tel" : "+16048796002",
+    "res_address" : "2975 Cambie Street,Vancouver,BC V5Z2V7",
+    "website" : "https://www.tropikavancouver.com/"
+  }, {
+    "img_path" : "images/salmon.jpg",
+    "ingredients" : "italian,salmon,gluten,seafood,black pepper",
+    "name" : "Grilled Salmon",
+    "price" : "$22.25",
+    "res_name" : "Tavola",
+    "res_tel" : "+16046064680",
+    "res_address" : "1829 Robson Street,Vancouver,BC V6G1E4",
+    "website" : "https://tavolavancouver.com"
+  }, {
+    "img_path" : "images/sushi.jpg",
+    "ingredients" : "japanese,salmon,seafood,rice,avocado",
+    "name" : "Sushi",
+    "price" : "$9.95",
+    "res_name" : "Avocado Bay",
+    "res_tel" : "+16045683437",
+    "res_address" : "1184 Denman Street,Vancouver,BC V6G2M9",
+    "website" : "http://www.avocadobay.com"
+  }, {
+    "img_path" : "images/caesar-salad.jpg",
+    "ingredients" : "gluten,chicken,lettuce,parmesan,black pepper",
+    "name" : "Caesar Salad",
+    "price" : "$9.99",
+    "res_name" : "Medina",
+    "res_tel" : "+16048793114",
+    "res_address" : "780 Richards Street,Vancouver,BC V6B3A4",
+    "website" : "http://www.medinacafe.com"
+  }, {
+    "img_path" : "images/three-bean-curry.jpg",
+    "ingredients" : "indian,curry,bean,vegan,gluten,rice,tomato",
+    "name" : "Three Bean Curry",
+    "price" : "$9.90",
+    "res_name" : "Indian Bay Leaf",
+    "res_tel" : "+16043360350",
+    "res_address" : "4890 Victoria Drive,Vancouver,BC V5N4P5",
+    "website" : "http://bayleafindiancuisine.com/"
+  }, {
+    "img_path" : "images/meatballs.jpg",
+    "ingredients" : "french,pork,parmesan,spaghetti,cheese",
+    "name" : "Meatballs",
+    "price" : "$13.95",
+    "res_name" : "Zefferelli's",
+    "res_tel" : "+16046870655",
+    "res_address" : "1136 Robson Street,Vancouver,BC V6E1B2",
+    "website" : "http://zefferellis.com"
+  }, {
+    "img_path" : "images/buffalo-burger.jpg",
+    "ingredients" : "buffalo,cheese,fries,wheat,lettuce",
+    "name" : "Buffalo Burger",
+    "price" : "$11.75",
+    "res_name" : "Wally's Burgers",
+    "res_tel" : "+16044342930",
+    "res_address" : "2661 E49th Avenue,Vancouver,BC V5S1J9",
+    "website" : "http://www.wallysburgers.ca"
+
+  }, {
+    "img_path" : "images/french-steak.jpg",
+    "ingredients" : "french,beef,gluten,broccoli,mashed potato",
+    "name" : "Steak",
+    "price" : "$20.50",
     "res_name" : "Fable Kitchen",
     "res_tel" : "+16047321322",
     "res_address" : "1944 W4th Avenue,Vancouver,BC V6J1M5",
