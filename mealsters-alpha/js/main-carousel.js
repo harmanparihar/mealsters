@@ -6,8 +6,9 @@ $(function() {
         slidesToShow: 1,
         mobileFirst: true,
         edgeFriction: 0,
-        speed: 100,
-        arrows: false,
+        speed: 200,
+        arrows: true,
+        appendArrows: $(".main-nav-bottom > ul"),
 
     });
 });
