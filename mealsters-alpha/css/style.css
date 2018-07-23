@@ -258,6 +258,78 @@
     opacity: 1;
   }
 }
+.foodinfo-anim-reverse-01 {
+  animation-name: foodinfoanim-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+.foodinfo-anim-reverse-01 h2 {
+  animation-name: foodinfoanimitem-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+.foodinfo-anim-reverse-02 {
+  animation-name: foodinfoanimitem-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes foodinfoanim-reverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes foodinfoanimitem-reverse {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+.menu-to-info-reverse {
+  animation-name: menu-entering-reverse;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes menu-entering-reverse {
+  0% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(-1.6rem);
+  }
+}
+.goback-to-info-reverse {
+  animation-name: goback-entering-reverse;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes goback-entering-reverse {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+}
 body {
   margin: 0;
   /* background-image: url("../images/salad.jpg"), linear-gradient(#ffa800, #f2398e); */
@@ -557,6 +629,35 @@ body.main {
     transform: translateY(-30px);
   }
 }
+/*******************************/
+/*******************************/
+/* Animation from Info to Main */
+/*******************************/
+/*******************************/
+.toMain {
+  animation-name: toMainAnim;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes toMainAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.toMain-2 {
+  animation-name: toMainAnim;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
 .fooditem {
   width: 100%;
   height: auto;

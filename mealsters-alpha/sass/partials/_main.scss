@@ -183,7 +183,7 @@ body.main{
     // opacity: 0;
     animation-name: toInfoAnim;
     animation-duration: .2s;
-    animation-timing-function:ease-in;  ;
+    animation-timing-function:ease-in;
     animation-iteration-count: 1;
 }
 @keyframes toInfoAnim {
@@ -200,7 +200,7 @@ body.main{
     // opacity: 0;
     animation-name: toInfoAnim;
     animation-duration: .3s;
-    animation-timing-function:ease-in;  ;
+    animation-timing-function:ease-in;
     animation-iteration-count: 1;
 }
 @keyframes toInfoAnim {
@@ -212,4 +212,36 @@ body.main{
         opacity: 0;
         transform: translateY(-30px);
     }
+}
+
+
+/*******************************/
+/*******************************/
+/* Animation from Info to Main */
+/*******************************/
+/*******************************/
+
+.toMain {
+    // opacity: 0;
+    animation-name: toMainAnim;
+    animation-duration: .2s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes toMainAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    } 100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.toMain-2 {
+    // opacity: 0;
+    animation-name: toMainAnim;
+    animation-duration: .3s;
+    animation-timing-function:ease-out;
+    animation-iteration-count: 1;
 }
