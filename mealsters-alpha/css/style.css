@@ -292,8 +292,12 @@ body.main {
   width: 80vw;
   padding-top: 40px;
   margin: 0px auto 20px auto;
+  left: 50%;
+  margin-left: -40vw;
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  z-index: 10;
 }
 .main header nav {
   grid-column: 1;
@@ -382,11 +386,55 @@ body.main {
   opacity: .7;
   color: #F55E6C;
 }
+.main-nav-bottom li:hover, .main-nav-bottom li:active {
+  animation-name: navAnimation;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
 
+@keyframes navAnimation {
+  0% {
+    transform: scale(1, 1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+    filter: brightness(0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+    filter: brightness(1);
+    display: none;
+  }
+}
+/*******************************/
+/*******************************/
+/* Animation from Main to Info */
+/*******************************/
+/*******************************/
+.toInfo {
+  animation-name: toInfoAnim;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes toInfoAnim {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
 .fooditem {
   width: 100%;
   height: auto;
   margin: auto;
+  padding-top: 15vh;
 }
 
 .fooditem > div {
@@ -499,21 +547,21 @@ img {
 .slick-active .ingredients a:nth-of-type(2) {
   opacity: 1;
   animation-name: toActiveIngredients;
-  animation-duration: .65s;
+  animation-duration: .75s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier();
 }
 .slick-active .ingredients a:nth-of-type(3) {
   opacity: 1;
   animation-name: toActiveIngredients;
-  animation-duration: .75s;
+  animation-duration: .95s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier();
 }
 .slick-active .ingredients a:nth-of-type(4) {
   opacity: 1;
   animation-name: toActiveIngredients;
-  animation-duration: .85s;
+  animation-duration: 1.05s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier();
 }

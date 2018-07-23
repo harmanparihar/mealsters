@@ -30,8 +30,12 @@ body.main{
     width: 80vw;
     padding-top: 40px;
     margin: 0px auto 20px auto;
+    left: 50%;
+    margin-left: -40vw;
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    z-index: 10;
 
     nav {
         grid-column: 1;
@@ -136,4 +140,56 @@ body.main{
         color: #F55E6C;
     }
 
+
+
+    li:hover, li:active {
+        animation-name: navAnimation;
+        animation-duration: .3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-out;
+    }
+
+
+
+}
+// animation on the buttons
+@keyframes navAnimation {
+    0% {
+        transform: scale(1,1);
+        filter: brightness(1);
+    } 50% {
+        transform: scale(.9,.9);
+        filter: brightness(0.5);
+    } 100% {
+        transform: scale(1,1);
+        filter: brightness(1);
+        display: none;
+    }
+
+}
+
+
+
+/*******************************/
+/*******************************/
+/* Animation from Main to Info */
+/*******************************/
+/*******************************/
+
+.toInfo {
+    // opacity: 0;
+    animation-name: toInfoAnim;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+@keyframes toInfoAnim {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    } 100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
 }

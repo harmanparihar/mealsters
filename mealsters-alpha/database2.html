@@ -47,6 +47,20 @@
     <!-- carousel library -->
     <script type="text/javascript" src="slick/slick.js"></script>
 
+
+    <style media="screen">
+        /* body.main {
+            background: linear-gradient(to top, white, transparent 50%), url("1.jpg");
+            background-size: 100vw 50vh, 50% 50%;
+            background-position: 30% 30%, 30% 30%;
+            background-repeat: no-repeat;
+
+        } */
+    </style>
+
+
+
+
     <title>Mealsters</title>
 </head>
 <body class="main">
@@ -62,51 +76,54 @@
     <!------------------------------->
     <!-- carousel structure: slick -->
     <!------------------------------->
-    <div class="fooditem">
-        <div><img src="1.jpg" alt="">
-            <h2>Delicious Nachos</h2>
+    <section class="main-section">
 
-            <div class="ingredients">
-                <a href="#">add</a>
-                <a href="#">something</a>
-                <a href="#">cool</a>
-                <a href="#">here</a>
 
+        <div class="fooditem">
+            <div><img src="1.jpg" alt="">
+                <h2>Delicious Nachos</h2>
+
+                <div class="ingredients">
+                    <a href="#">add</a>
+                    <a href="#">something</a>
+                    <a href="#">cool</a>
+                    <a href="#">here</a>
+
+                </div>
+            </div>
+            <div>
+                <img src="2.jpg" alt="">
+                <h2>Just a Regular Ceaser Salad with Chicken</h2>
+
+                <div class="ingredients">
+                    <a href="#">add</a>
+                    <a href="#">something</a>
+                    <a href="#">cool</a>
+
+                </div>
+            </div>
+            <div>
+                <img src="3.jpg" alt="">
+                <h2>Smoke & Pepper Burger</h2>
+
+                <div class="ingredients">
+                    <a href="#">add</a>
+                    <a href="#">something</a>
+                    <a href="#">cool</a>
+                    <a href="#">here</a>
+
+                </div>
             </div>
         </div>
-        <div>
-            <img src="2.jpg" alt="">
-            <h2>Just a Regular Ceaser Salad with Chicken</h2>
+        <!-- end of carousel structure -->
 
-            <div class="ingredients">
-                <a href="#">add</a>
-                <a href="#">something</a>
-                <a href="#">cool</a>
-
-            </div>
-        </div>
-        <div>
-            <img src="3.jpg" alt="">
-            <h2>Smoke & Pepper Burger</h2>
-
-            <div class="ingredients">
-                <a href="#">add</a>
-                <a href="#">something</a>
-                <a href="#">cool</a>
-                <a href="#">here</a>
-
-            </div>
-        </div>
-    </div>
-    <!-- end of carousel structure -->
-
-    <nav class="main-nav-bottom">
-        <ul>
-            <!-- <li>
+        <nav class="main-nav-bottom">
+            <ul>
+                <!-- <li>
                 <object data="images/Assets/left-arrow-icon.svg" type="image/svg+xml"></object>
                 <a href="#">previous</a>
             </li> -->
-            <li>
+            <li id="foodInfo">
                 <object data="images/Assets/info-icon.svg" type="image/svg+xml"></object>
                 <a href="#">info</a>
             </li>
@@ -115,11 +132,12 @@
                 <a href="#">save</a>
             </li>
             <!-- <li>
-                <object data="images/Assets/right-arrow-icon.svg" type="image/svg+xml"></object>
-                <a href="#">next</a>
-            </li> -->
-        </ul>
-    </nav>
+            <object data="images/Assets/right-arrow-icon.svg" type="image/svg+xml"></object>
+            <a href="#">next</a>
+        </li> -->
+    </ul>
+</nav>
+</section>
 
 
 
@@ -154,16 +172,15 @@
 
 
 
+<!-- <div class="wrapper">
 
-    <!-- <div class="wrapper">
 
-
-    <nav>
-    <ul>
-    <li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
-    <li><img src="images/Assets/info-icon.png" alt=""></li>
-    <li><img src="images/Assets/favorite-icon.png" alt=""></li>
-    <li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
+<nav>
+<ul>
+<li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
+<li><img src="images/Assets/info-icon.png" alt=""></li>
+<li><img src="images/Assets/favorite-icon.png" alt=""></li>
+<li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
 </ul>
 </nav>
 
