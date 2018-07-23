@@ -41,10 +41,13 @@ body.main{
         grid-column: 1;
         justify-self: left;
         align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
 
         i {
             color: white;
             font-size: 1.5rem;
+            margin-right: .5rem;
         }
     }
 
@@ -56,7 +59,7 @@ body.main{
         grid-column: 2;
         margin: 0;
         padding: 0;
-        padding-bottom: .2rem;
+        // padding-bottom: .2rem;
     }
 }
 
@@ -180,7 +183,7 @@ body.main{
     // opacity: 0;
     animation-name: toInfoAnim;
     animation-duration: .2s;
-    animation-timing-function: ease-out;
+    animation-timing-function:ease-in;  ;
     animation-iteration-count: 1;
 }
 @keyframes toInfoAnim {
@@ -190,6 +193,23 @@ body.main{
 
     } 100% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-30px);
+    }
+}
+.toInfo-2 {
+    // opacity: 0;
+    animation-name: toInfoAnim;
+    animation-duration: .3s;
+    animation-timing-function:ease-in;  ;
+    animation-iteration-count: 1;
+}
+@keyframes toInfoAnim {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    } 100% {
+        opacity: 0;
+        transform: translateY(-30px);
     }
 }
