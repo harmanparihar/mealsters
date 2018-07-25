@@ -48,8 +48,15 @@
     <script type="text/javascript" src="slick/slick.js"></script>
 
 
-    <style media="screen">
+    <!------------------------------->
+    <!-- Animations File  ----------->
+    <!------------------------------->
+    <script src="js/animations.js"></script>
 
+
+
+    <style media="screen">
+        html,body{overflow-y: scroll; }
     </style>
 
 
@@ -75,17 +82,7 @@
 
 
         <div class="fooditem">
-            <div><img src="images/buffalo-burger.jpg" alt="">
-                <h2>Buffalo Burger</h2>
 
-                <div class="ingredients">
-                    <a href="#">add</a>
-                    <a href="#">something</a>
-                    <a href="#">cool</a>
-                    <a href="#">here</a>
-
-                </div>
-            </div>
             <div>
                 <img src="images/caesar-salad.jpg" alt="">
                 <h2>Caesar Salad</h2>
@@ -100,6 +97,17 @@
             <div>
                 <img src="images/chicken-curry.jpg" alt="">
                 <h2>Chicken Curry</h2>
+
+                <div class="ingredients">
+                    <a href="#">add</a>
+                    <a href="#">something</a>
+                    <a href="#">cool</a>
+                    <a href="#">here</a>
+
+                </div>
+            </div>
+            <div><img src="images/buffalo-burger.jpg" alt="">
+                <h2>Buffalo Burger</h2>
 
                 <div class="ingredients">
                     <a href="#">add</a>
@@ -187,15 +195,69 @@
 
     <div class="foodinfo-wrapper">
 
+
+        <!------------------------------->
+        <!-- ingredients box ------------>
+        <!------------------------------->
         <div class="foodinfo-box-ingredients" id="infobox1" style="opacity:0">
+            <div class="ingredients">
+                <a href="#">add</a>
+                <a href="#">something</a>
+                <a href="#">really</a>
+                <a href="#">really</a>
+                <a href="#">cool</a>
+            </div>
 
         </div>
 
-        <div class="foodinfo-box-ingredients price" id="infobox2" style="opacity:0">
+        <!------------------------------->
+        <!-- price box ------------------>
+        <!------------------------------->
+        <div class="foodinfo-box-price" id="infobox2" style="opacity:0">
 
+            <!-- price left ------------------>
+            <div class="price-left">
+                <img src="images/assets/price-icon.png" alt="">
+                <h4>PRICE</h4>
+            </div>
+
+            <!-- price right ----------------->
+            <div class="price-right">
+                <h3>13.59</h3>
+                <h4>+TAXES</h4>
+            </div>
         </div>
 
-        <div class="foodinfo-box-ingredients" id="infobox3" style="opacity:0">
+        <!------------------------------------------->
+        <!-- telephone/website box ------------------>
+        <!------------------------------------------->
+        <div class="foodinfo-box-contact" id="infobox3" style="opacity:0">
+            <div class="telephone">
+                <img src="images/assets/phone-icon@2x.png" alt="">
+                <h4>TELEPHONE</h4>
+            </div>
+
+            <div class="website">
+                <img src="images/assets/website-icon@2x.png" alt="">
+                <h4>WEBSITE</h4>
+            </div>
+        </div>
+
+        <div class="foodinfo-box-restaurant" id="infobox4" style="opacity:0">
+            <div class="restaurant-image">
+
+                <h4>Velvet Underground</h4>
+                <h5>Gourmet Burgers</h5>
+            </div>
+
+            <div class="review">
+                <div class="review-left">
+                    <img src="images/assets/review-icon.png" alt="">
+                    <h4>REVIEW</h4>
+                </div>
+            </div>
+
+
 
         </div>
 

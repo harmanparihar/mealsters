@@ -13,143 +13,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Asap:400,700");
 /*$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;*/
-/******************************************/
-/*                                        */
-/* INTERNAL PAGE (food & restaurant info) */
-/*                                        */
-/******************************************/
-/* Modifications: styling                 */
-/*                                        */
-/* by: Maggie                             */
-/******************************************/
-.info > * {
-  background-color: white;
-  margin: .5rem;
-  padding: 0 2rem;
-  border-radius: 10px;
-}
-
-.info > * > * {
-  padding: 1rem 0;
-}
-
-.info .ingredients {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.info .ingredients span {
-  background-color: #a493ff;
-  /* color blue */
-  color: white;
-  font-size: .8rem;
-  text-transform: uppercase;
-  padding: .2rem .5rem;
-  margin: .5rem;
-  border-radius: 1rem;
-  display: inline-block;
-}
-
-.info {
-  display: block;
-}
-
-.info .price {
-  display: flex;
-  align-items: baseline;
-  color: #7359ff;
-  /* blue dark */
-  font-size: 2rem;
-  font-weight: 700;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.info .price:before {
-  content: url("../images/Assets/price-icon.png") "PRICE";
-  font-size: .8rem;
-  color: #ababab;
-  /* black lighter */
-  flex-grow: 1;
-  font-weight: 400;
-}
-
-.info .price:after {
-  content: "+ TAXES";
-  font-size: .8rem;
-  font-weight: 400;
-  color: #ababab;
-  /* black lighter */
-}
-
-.info .res_call {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-content: center;
-  text-align: center;
-  background: linear-gradient(to right, #f2398e, #ffa800);
-  padding: 0;
-}
-
-.info .res_call a {
-  color: white;
-  display: block;
-  width: 100%;
-  padding: 2rem 0;
-}
-
-.info .res_call .res_tel {
-  border-right: 5px solid white;
-}
-
-.res_info {
-  padding: 0;
-}
-
-.res_info > * {
-  padding: 0 2rem;
-  font-size: .8rem;
-  color: #ababab;
-  /* black lighter */
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 130px;
-  border-bottom: 1px solid #ababab;
-}
-
-.res_info .res_name {
-  /* height: 130px; */
-  font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.5) url("../images/res_bg.jpg") center;
-  background-blend-mode: color;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  color: white;
-  font-weight: 600;
-  line-height: 8;
-}
-
-.res_info img {
-  vertical-align: middle;
-}
-
-.res_info .res_address_text, .res_info .res_hour_text {
-  text-align: right;
-}
-
-.res_info .res_address_text span {
-  display: block;
-}
-
-/******************************************/
-/*           end of internal page         */
-/******************************************/
 .foodinfo {
   min-height: 100vh;
   height: 100%;
@@ -178,158 +41,146 @@
   margin: 20px auto;
 }
 
-.foodinfo-box-ingredients {
-  height: 200px;
+/*******************************/
+/* Food Info Boxes             */
+/*******************************/
+.foodinfo-box-ingredients, .foodinfo-box-price, .foodinfo-box-restaurant {
+  height: auto;
   background-color: white;
   filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.1));
   border-radius: 8px;
   margin: 1rem 0;
+  /* Ingredients Box   */
+}
+.foodinfo-box-ingredients .ingredients, .foodinfo-box-price .ingredients, .foodinfo-box-restaurant .ingredients {
+  flex-wrap: wrap;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+.foodinfo-box-ingredients .ingredients a, .foodinfo-box-price .ingredients a, .foodinfo-box-restaurant .ingredients a {
+  margin: .5rem .3rem;
 }
 
-.foodinfo-anim-01 {
-  animation-name: foodinfoanim;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
+/* Price Box   */
+.foodinfo-box-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: .3rem;
 }
-.foodinfo-anim-01 h2 {
-  animation-name: foodinfoanimitem;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
+.foodinfo-box-price .price-left {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem 1.5rem 2rem;
 }
-
-.foodinfo-anim-02 {
-  animation-name: foodinfoanimitem;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
+.foodinfo-box-price .price-left img {
+  margin-top: 1rem;
+  max-width: 30px;
+  max-height: 30px;
 }
-
-@keyframes foodinfoanim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
+.foodinfo-box-price .price-left h4 {
+  text-align: left;
+  margin-left: .5rem;
+  color: #C7C1BD;
+  font-weight: 400;
 }
-@keyframes foodinfoanimitem {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 100;
-    transform: translateY(0px);
-  }
+.foodinfo-box-price .price-right {
+  padding-right: 2rem;
+  padding-top: 1.5rem;
 }
-.menu-to-info {
-  animation-name: menu-entering;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  transform: translateX(1rem);
-  animation-timing-function: ease-in-out;
+.foodinfo-box-price .price-right h3 {
+  font-family: "asap", verdana, helvetica, arial, sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  line-height: 2rem;
+  color: #7B759B;
 }
-
-@keyframes menu-entering {
-  0% {
-    transform: translateX(-1.6rem);
-  }
-  100% {
-    transform: translateX(1rem);
-  }
-}
-#menu, #goback {
-  clear: both;
+.foodinfo-box-price .price-right h4 {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: .8rem;
+  color: #BAB7CB;
 }
 
-.goback-to-info {
-  animation-name: goback-entering;
-  animation-duration: .4s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+.foodinfo-box-contact {
+  height: auto;
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5rem;
+}
+.foodinfo-box-contact .telephone, .foodinfo-box-contact .website {
+  background: linear-gradient(to right, #F13A8D, #F87156);
+  padding: 1.5rem 0;
+  border-radius: 8px 0px 0px 8px;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.1));
+}
+.foodinfo-box-contact .telephone img, .foodinfo-box-contact .website img {
+  max-width: 50px;
+  max-height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+.foodinfo-box-contact .telephone h4, .foodinfo-box-contact .website h4 {
+  color: white;
+  margin: 0;
+  margin-top: .5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.foodinfo-box-contact .website {
+  border-radius: 0px 8px 8px 0px;
+  background: linear-gradient(to right, #F87156, #FFA721);
 }
 
-@keyframes goback-entering {
-  0% {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+.foodinfo-box-restaurant .restaurant-image {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url("../images/res_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  border-radius: 8px 8px 0px 0px;
 }
-.foodinfo-anim-reverse-01 {
-  animation-name: foodinfoanim-reverse;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  opacity: 0;
+.foodinfo-box-restaurant .restaurant-image h4 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding: 50px 2rem 0px 2rem;
+  font-family: "asap", verdana, helvetica, arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
 }
-.foodinfo-anim-reverse-01 h2 {
-  animation-name: foodinfoanimitem-reverse;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  opacity: 0;
+.foodinfo-box-restaurant .restaurant-image h5 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-left: 2rem;
+  font-size: 1.1rem;
+  opacity: .8;
+  font-weight: 300;
 }
-
-.foodinfo-anim-reverse-02 {
-  animation-name: foodinfoanimitem-reverse;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
+.foodinfo-box-restaurant .review {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: .3rem;
 }
-
-@keyframes foodinfoanim-reverse {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.foodinfo-box-restaurant .review .review-left {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem 1.5rem 2rem;
 }
-@keyframes foodinfoanimitem-reverse {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
+.foodinfo-box-restaurant .review .review-left img {
+  margin-top: 1rem;
+  max-width: 30px;
+  max-height: 30px;
 }
-.menu-to-info-reverse {
-  animation-name: menu-entering-reverse;
-  animation-duration: .4s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+.foodinfo-box-restaurant .review .review-left h4 {
+  text-align: left;
+  margin-left: .5rem;
+  color: #C7C1BD;
+  font-weight: 400;
 }
 
-@keyframes menu-entering-reverse {
-  0% {
-    transform: translateX(1rem);
-  }
-  100% {
-    transform: translateX(-1.6rem);
-  }
-}
-.goback-to-info-reverse {
-  animation-name: goback-entering-reverse;
-  animation-duration: .4s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes goback-entering-reverse {
-  0% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-}
 body {
   margin: 0;
   /* background-image: url("../images/salad.jpg"), linear-gradient(#ffa800, #f2398e); */
@@ -568,95 +419,6 @@ body.main {
   opacity: .7;
   color: #F55E6C;
 }
-.main-nav-bottom li:hover, .main-nav-bottom li:active {
-  animation-name: navAnimation;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-}
-
-@keyframes navAnimation {
-  0% {
-    transform: scale(1, 1);
-    filter: brightness(1);
-  }
-  50% {
-    transform: scale(0.9, 0.9);
-    filter: brightness(0.5);
-  }
-  100% {
-    transform: scale(1, 1);
-    filter: brightness(1);
-    display: none;
-  }
-}
-/*******************************/
-/*******************************/
-/* Animation from Main to Info */
-/*******************************/
-/*******************************/
-.toInfo {
-  animation-name: toInfoAnim;
-  animation-duration: .2s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-}
-
-@keyframes toInfoAnim {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-}
-.toInfo-2 {
-  animation-name: toInfoAnim;
-  animation-duration: .3s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-}
-
-@keyframes toInfoAnim {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-}
-/*******************************/
-/*******************************/
-/* Animation from Info to Main */
-/*******************************/
-/*******************************/
-.toMain {
-  animation-name: toMainAnim;
-  animation-duration: .2s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
-}
-
-@keyframes toMainAnim {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-.toMain-2 {
-  animation-name: toMainAnim;
-  animation-duration: .3s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
-}
 
 .fooditem {
   width: 100%;
@@ -805,6 +567,248 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+/*******************************/
+/* Main Navigation Bottom      */
+/*******************************/
+.main-nav-bottom li:hover, .main-nav-bottom li:active {
+  animation-name: navAnimation;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+@keyframes navAnimation {
+  0% {
+    transform: scale(1, 1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(0.9, 0.9);
+    filter: brightness(0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+    filter: brightness(1);
+    display: none;
+  }
+}
+/*******************************/
+/*******************************/
+/* Animation from Main to Info */
+/*******************************/
+/*******************************/
+.toInfo {
+  animation-name: toInfoAnim;
+  animation-duration: .2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes toInfoAnim {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+.toInfo-2 {
+  animation-name: toInfoAnim;
+  animation-duration: .3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+}
+
+@keyframes toInfoAnim {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+/*******************************/
+/*******************************/
+/* Animation from Info to Main */
+/*******************************/
+/*******************************/
+.toMain {
+  animation-name: toMainAnim;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes toMainAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.toMain-2 {
+  animation-name: toMainAnim;
+  animation-duration: .3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+/*******************************/
+/*******************************/
+/* Restaurant Info Animations */
+/*******************************/
+/*******************************/
+.foodinfo-anim-01 {
+  animation-name: foodinfoanim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+.foodinfo-anim-01 h2 {
+  animation-name: foodinfoanimitem;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+
+.foodinfo-anim-02 {
+  animation-name: foodinfoanimitem;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes foodinfoanim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes foodinfoanimitem {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+.menu-to-info {
+  animation-name: menu-entering;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  transform: translateX(1rem);
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes menu-entering {
+  0% {
+    transform: translateX(-1.6rem);
+  }
+  100% {
+    transform: translateX(1rem);
+  }
+}
+#menu, #goback {
+  clear: both;
+}
+
+.goback-to-info {
+  animation-name: goback-entering;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes goback-entering {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.foodinfo-anim-reverse-01 {
+  animation-name: foodinfoanim-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+.foodinfo-anim-reverse-01 h2 {
+  animation-name: foodinfoanimitem-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+.foodinfo-anim-reverse-02 {
+  animation-name: foodinfoanimitem-reverse;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes foodinfoanim-reverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes foodinfoanimitem-reverse {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+.menu-to-info-reverse {
+  animation-name: menu-entering-reverse;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes menu-entering-reverse {
+  0% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(-1.6rem);
+  }
+}
+.goback-to-info-reverse {
+  animation-name: goback-entering-reverse;
+  animation-duration: .4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes goback-entering-reverse {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-60px);
+    opacity: 0;
   }
 }
 
