@@ -19,10 +19,11 @@ $(function(){
                 let ing = obj.ingredients.split(',');
                 $('.img_space').attr("src", path);
                 $('.fouringredients').html('');
+                $('.ingredients').html('');
                 let count1=0;
                 for (let item of ing) {
                     count1++;
-                    if(count1<5){
+                    if(count1<4){
                     $('.fouringredients').append(`<a href="#">${item}</a>`);}
                     $('.completeingredients').append(`<a href="#">${item}</a>`);
                 }
@@ -58,10 +59,11 @@ $(function(){
                 let ing = obj.ingredients.split(',');
                 $('.img_space').attr("src", path);
                 $('.fouringredients').html('');
+                $('.ingredients').html('');
                 let count1=0;
                 for (let item of ing) {
                     count1++;
-                    if(count1<5){
+                    if(count1<4){
                     $('.fouringredients').append(`<a href="#">${item}</a>`);}
                     $('.completeingredients').append(`<a href="#">${item}</a>`);
                 }
@@ -91,10 +93,11 @@ $(function(){
             let ing = obj.ingredients.split(',');
             $('.img_space').attr("src", path);
             $('.fouringredients').html('');
+            $('.ingredients').html('');
             let count1=0;
             for (let item of ing) {
                 count1++;
-                if(count1<5){
+                if(count1<4){
                 $('.fouringredients').append(`<a href="#">${item}</a>`);}
                 $('.completeingredients').append(`<a href="#">${item}</a>`);
             }
