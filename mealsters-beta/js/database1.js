@@ -1,5 +1,5 @@
 $(function(){
-    let max=20;
+    let max=18;
     let count=Math.floor(Math.random() * max) + 1;
     $('.next').click(function(evt) {
         console.log("Button was clicked");
