@@ -1,6 +1,11 @@
 $(function(){
-    let max=18;
+    let max=20;
     let count=Math.floor(Math.random() * max) + 1;
+
+// ************************************************************************
+// code for navigating the databse records using buttons
+// Author:Harmanpreet Kaur
+// ************************************************************************
     $('.next').click(function(evt) {
         console.log("Button was clicked");
         if(count!= max){
@@ -24,10 +29,6 @@ $(function(){
             if(prev < 1){
               prev=max;
             }
-
-
-
-
             if(key==next) {
               if(currentindex==0){
                 const nextindexes=[-2,1,4];
@@ -44,7 +45,6 @@ $(function(){
 
                   }
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
-
                 }
               }
               if(currentindex==1){
@@ -62,7 +62,6 @@ $(function(){
 
                   }
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
-
                 }
               }
               if(currentindex==2){
@@ -82,38 +81,8 @@ $(function(){
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
                 }
               }
-              //
-              // let nextindex;
-              //   if(currentindex!=2){
-              //     nextindex=currentindex+1;
-              //   }else{
-              //     nextindex=0;
-              //   }
-              //   let path = obj.img_path;
-              //   let ing = obj.ingredients.split(',');
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.img_space').attr("src", path);
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').html('');
-              //   let count1=0;
-              //   for (let item of ing) {
-              //       count1++;
-              //       if(count1<4){
-              //       $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-              //
-              //   }
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.name').html(obj.name);
-
             }
-
-
-
-
-
-
-
-
-
             if(key==prev) {
-
               if(currentindex==0){
                 const nextindexes=[-1,2,5];
                 for(let i of nextindexes){
@@ -167,26 +136,6 @@ $(function(){
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
                 }
               }
-
-              // let previndex;
-              //   if(currentindex!=0){
-              //     previndex=currentindex-1;
-              //   }else{
-              //     previndex=2;
-              //   }
-              //   let path = obj.img_path;
-              //   let ing = obj.ingredients.split(',');
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.img_space').attr("src", path);
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').html('');
-              //   let count1=0;
-              //   for (let item of ing) {
-              //       count1++;
-              //       if(count1<4){
-              //       $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-              //
-              //   }
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.name').html(obj.name);
-
             }
             if(key==count) {
                 let path = obj.img_path;
@@ -242,10 +191,6 @@ $(function(){
             if(prev < 1){
               prev=max;
             }
-
-
-
-
             if(key==next) {
               if(currentindex==0){
                 const nextindexes=[-2,1,4];
@@ -300,36 +245,7 @@ $(function(){
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
                 }
               }
-              //
-              // let nextindex;
-              //   if(currentindex!=2){
-              //     nextindex=currentindex+1;
-              //   }else{
-              //     nextindex=0;
-              //   }
-              //   let path = obj.img_path;
-              //   let ing = obj.ingredients.split(',');
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.img_space').attr("src", path);
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').html('');
-              //   let count1=0;
-              //   for (let item of ing) {
-              //       count1++;
-              //       if(count1<4){
-              //       $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-              //
-              //   }
-              //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.name').html(obj.name);
-
             }
-
-
-
-
-
-
-
-
-
             if(key==prev) {
 
               if(currentindex==0){
@@ -385,26 +301,6 @@ $(function(){
                   $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
                 }
               }
-
-              // let previndex;
-              //   if(currentindex!=0){
-              //     previndex=currentindex-1;
-              //   }else{
-              //     previndex=2;
-              //   }
-              //   let path = obj.img_path;
-              //   let ing = obj.ingredients.split(',');
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.img_space').attr("src", path);
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').html('');
-              //   let count1=0;
-              //   for (let item of ing) {
-              //       count1++;
-              //       if(count1<4){
-              //       $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-              //
-              //   }
-              //   $(`div[data-slick-index=${previndex}]`).children().children().children('.name').html(obj.name);
-
             }
             if(key==count) {
                 let path = obj.img_path;
@@ -450,10 +346,6 @@ $(function(){
         if(prev < 1){
           prev=max;
         }
-
-
-
-
         if(key==next) {
           if(currentindex==0){
             const nextindexes=[-2,1,4];
@@ -508,38 +400,8 @@ $(function(){
               $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
             }
           }
-          //
-          // let nextindex;
-          //   if(currentindex!=2){
-          //     nextindex=currentindex+1;
-          //   }else{
-          //     nextindex=0;
-          //   }
-          //   let path = obj.img_path;
-          //   let ing = obj.ingredients.split(',');
-          //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.img_space').attr("src", path);
-          //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').html('');
-          //   let count1=0;
-          //   for (let item of ing) {
-          //       count1++;
-          //       if(count1<4){
-          //       $(`div[data-slick-index=${nextindex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-          //
-          //   }
-          //   $(`div[data-slick-index=${nextindex}]`).children().children().children('.name').html(obj.name);
-
         }
-
-
-
-
-
-
-
-
-
         if(key==prev) {
-
           if(currentindex==0){
             const nextindexes=[-1,2,5];
             for(let i of nextindexes){
@@ -593,26 +455,6 @@ $(function(){
               $(`div[data-slick-index=${i}]`).children().children().children('.name').html(obj.name);
             }
           }
-
-          // let previndex;
-          //   if(currentindex!=0){
-          //     previndex=currentindex-1;
-          //   }else{
-          //     previndex=2;
-          //   }
-          //   let path = obj.img_path;
-          //   let ing = obj.ingredients.split(',');
-          //   $(`div[data-slick-index=${previndex}]`).children().children().children('.img_space').attr("src", path);
-          //   $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').html('');
-          //   let count1=0;
-          //   for (let item of ing) {
-          //       count1++;
-          //       if(count1<4){
-          //       $(`div[data-slick-index=${previndex}]`).children().children().children('.fouringredients').append(`<a href="#">${item}</a>`);}
-          //
-          //   }
-          //   $(`div[data-slick-index=${previndex}]`).children().children().children('.name').html(obj.name);
-
         }
         if(key==count) {
             let path = obj.img_path;
@@ -638,5 +480,22 @@ $(function(){
                 $('.res_address_text').append(`<p>${item}</p>`);
             }
         }
+    });
+    // ************************************************************************
+    // code for navigating the databse records using buttons
+    //                      ENDS HERE
+    // ************************************************************************
+
+
+
+
+    //Enable swiping...
+    $(".slick-slide").swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        console.log("You swiped " + direction );
+      },
+      //Default is 75px, set to 0 for demo so any distance triggers swipe
+       threshold:0
     });
 });
