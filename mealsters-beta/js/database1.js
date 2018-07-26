@@ -1,5 +1,5 @@
 $(function(){
-    let max=20;
+    let max=19;
     let count=Math.floor(Math.random() * max) + 1;
     $('.next').click(function(evt) {
         console.log("Button was clicked");
@@ -7,19 +7,33 @@ $(function(){
             count++;
         }
         else{
-            count=1;
+            count=2;
         }
         food_ref.on('child_added', function(data) {
             const key = data.key;
             const obj = data.val();
-            console.log(key);
-            console.log(obj);
+            // console.log(key);
+            // console.log(obj);
+            if(key==count-1) {
+                let path = obj.img_path;
+                let ing = obj.ingredients.split(',');
+                console.log(ing);
+                $('.img_space_prev').attr("src", path);
+                $('.name_prev').html(obj.name);
+                $('.fouringredients_prev').html('');
+                let count1=0;
+                for (let item of ing) {
+                    count1++;
+                    if(count1<4){
+                    $('.fouringredients_prev').append(`<a href="#">${item}</a>`);}
+                }
+              }
             if(key==count) {
                 let path = obj.img_path;
                 let ing = obj.ingredients.split(',');
                 $('.img_space').attr("src", path);
                 $('.fouringredients').html('');
-                $('.ingredients').html('');
+                $('.completeingredients').html('');
                 let count1=0;
                 for (let item of ing) {
                     count1++;
@@ -38,11 +52,24 @@ $(function(){
                     $('.res_address_text').append(`<span>${item}</span>`);
                 }
             }
+              if(key==count+1) {
+                  let path = obj.img_path;
+                  let ing = obj.ingredients.split(',');
+                  $('.img_space_next').attr("src", path);
+                  $('.name_next').html(obj.name);
+                  $('.fouringredients_next').html('');
+                  let count1=0;
+                  for (let item of ing) {
+                      count1++;
+                      if(count1<4){
+                      $('.fouringredients_next').append(`<a href="#">${item}</a>`);}
+                  }
+                }
         });
     });
     $('.prev').click(function(evt) {
         console.log("Button was clicked");
-        if(count!= 1){
+        if(count!= 2){
             count--;
         }
         else{
@@ -53,13 +80,26 @@ $(function(){
             const obj = data.val();
             console.log(key);
             console.log(obj);
+            if(key==count-1) {
+                let path = obj.img_path;
+                let ing = obj.ingredients.split(',');
+                console.log(ing);
+                $('.img_space_prev').attr("src", path);
+                $('.name_prev').html(obj.name);
+                $('.fouringredients_prev').html('');
+                let count1=0;
+                for (let item of ing) {
+                    count1++;
+                    if(count1<4){
+                    $('.fouringredients_prev').append(`<a href="#">${item}</a>`);}
+                }
+              }
             if(key==count) {
-
                 let path = obj.img_path;
                 let ing = obj.ingredients.split(',');
                 $('.img_space').attr("src", path);
                 $('.fouringredients').html('');
-                $('.ingredients').html('');
+                $('.completeingredients').html('');
                 let count1=0;
                 for (let item of ing) {
                     count1++;
@@ -78,6 +118,20 @@ $(function(){
                     $('.res_address_text').append(`<span>${item}</span>`);
                 }
             }
+              if(key==count+1) {
+                  let path = obj.img_path;
+                  let ing = obj.ingredients.split(',');
+                  $('.img_space_next').attr("src", path);
+                  $('.name_next').html(obj.name);
+                  $('.fouringredients_next').html('');
+                  let count1=0;
+                  for (let item of ing) {
+                      count1++;
+                      if(count1<4){
+                      $('.fouringredients_next').append(`<a href="#">${item}</a>`);}
+                  }
+                }
+
         });
     });
     console.log("outside the block");
@@ -88,17 +142,31 @@ $(function(){
         const obj = data.val();
         console.log(key);
         console.log(obj);
+        if(key==count-1) {
+            let path = obj.img_path;
+            let ing = obj.ingredients.split(',');
+            $('.img_space_prev').attr("src", path);
+            $('.name_prev').html(obj.name);
+            $('.fouringredients_prev').html('');
+            let count1=0;
+            for (let item of ing) {
+                count1++;
+                if(count1<4){
+                $('.fouringredients_prev').append(`<a href="#">${item}</a>`);}
+            }
+          }
         if(key==count) {
             let path = obj.img_path;
             let ing = obj.ingredients.split(',');
             $('.img_space').attr("src", path);
             $('.fouringredients').html('');
-            $('.ingredients').html('');
+            $('.completeingredients').html('');
             let count1=0;
             for (let item of ing) {
                 count1++;
                 if(count1<4){
-                $('.fouringredients').append(`<a href="#">${item}</a>`);}
+                $('.fouringredients').append(`<a href="#">${item}</a>`);
+                }
                 $('.completeingredients').append(`<a href="#">${item}</a>`);
             }
             $('.price').html(obj.price);
@@ -112,5 +180,20 @@ $(function(){
                 $('.res_address_text').append(`<p>${item}</p>`);
             }
         }
+
+          if(key==count+1) {
+              let path = obj.img_path;
+              let ing = obj.ingredients.split(',');
+              $('.img_space_next').attr("src", path);
+              $('.name_next').html(obj.name);
+              $('.fouringredients_next').html('');
+              let count1=0;
+              for (let item of ing) {
+                  count1++;
+                  if(count1<4){
+                  $('.fouringredients_next').append(`<a href="#">${item}</a>`);}
+              }
+            }
+
     });
 });
