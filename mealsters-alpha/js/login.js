@@ -18,7 +18,7 @@
 
             console.log("Hello");
             if(data.val().password == pass){
-              document.location.href = "database.html";
+              document.location.href = "database2.html";
             } else{
                 $(".passworderror").html("Wrong Password!");
                 console.log("Wrong Password entered");

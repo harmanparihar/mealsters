@@ -285,13 +285,14 @@ input, label, .submit {
   border: 0px solid rgba(0, 0, 0, 0.2);
   margin: 10px;
   font-size: 0.9rem;
-  border-radius: 15px;
+  border-radius: 40px;
   color: white;
 }
 
 .submit {
   font-family: 'Asap', sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   background: linear-gradient(to right, #a493ff, #f2398e);
 }
 
@@ -849,6 +850,11 @@ img {
     opacity: 0;
   }
 }
+/*******************************/
+/*******************************/
+/* Animation from Main to Info */
+/*******************************/
+/*******************************/
 /******************************************/
 /*                                        */
 /* MENU                                   */
