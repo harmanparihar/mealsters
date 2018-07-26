@@ -494,6 +494,15 @@ $(function(){
       //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         console.log("You swiped " + direction );
+        if(direction=='left'){
+          $(".next").trigger("click");
+        }
+        if(direction=='right'){
+          $(".prev").trigger("click");
+        }
+        if(direction=='up'){
+          $('#gofoodinfo').trigger("click");
+        }
       },
       //Default is 75px, set to 0 for demo so any distance triggers swipe
        threshold:0
