@@ -39,6 +39,7 @@ $(function() {
                 $("#menu").removeClass('menu-to-info-reverse');
                 $("#menu").addClass('menu-to-info');
 
+                
                 $("#goback").removeClass('goback-to-info-reverse');
                 $("#goback").addClass('goback-to-info');
                 $('#goback').css("display", "inline-block");
@@ -89,7 +90,7 @@ $(function() {
                 $("#infobox3").addClass("foodinfo-anim-02")
                 $('#infobox3').css("opacity", "1")
             }, 650);
-    
+
             // Eighth Motion - Showing the fourth box
             setTimeout(function() {
 
@@ -166,5 +167,37 @@ $(function() {
                 $('#name-main').css("opacity", "1");
             }, 610);
         })
+
+
+
+
+
+
+
+        // MENU TRANSITION
+
+        $("#menu").on("click", function() {
+            $(".menu").toggleClass("menu-on")
+            $("#menu").toggleClass("menu-icon-on")
+
+            // changing the icon of the menue
+            $("#menu").toggleClass("fa-bars")
+            $("#menu").toggleClass("fa-arrow-left")
+
+            // blocking other buttons to be clicked
+            $(".main-section, .foodinfo").toggleClass("event-blocker");
+            console.log("working");
+
+            // animating the items in the menu
+            $("#menu-items").toggleClass("menu-items-on")
+            $("#menu-items").toggleClass("menu-items-off")
+        });
+
+
+
+
+
+
+
 
     });

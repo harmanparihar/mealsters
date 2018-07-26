@@ -1,7 +1,4 @@
 $(function() {
-
-
-
     $('.fooditem').slick({
         centerMode: true,
         centerPadding: '40px',
@@ -11,7 +8,6 @@ $(function() {
         speed: 200,
         arrows: true,
         appendArrows: $(".main-nav-bottom > ul"),
-
     });
 
 
@@ -29,7 +25,7 @@ $(function() {
 
 
 
-    
+
 
 
 

@@ -65,12 +65,24 @@
     <title>Mealsters</title>
 </head>
 <body class="main">
-
+    <!-- <div class="menu-items"> -->
+        <ul class="menu-items-off" id="menu-items">
+            <li><a href="#">FILTERS</a></li>
+            <li><a href="#">FAVORITES</a></li>
+            <li><a href="#">ACCOUNT</a></li>
+            <li><a href="#">NOTIFICATIONS</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    <!-- </div> -->
 
     <header>
         <nav>
             <i class="fas fa-arrow-left" id="goback" style="display:none"></i>
             <i class="menu_icon fas fa-bars" id="menu" style="display:block"></i>
+            <span class="menu"></span>
+
+
         </nav>
         <h1 id="name-main">Mealsters</h1>
     </header>
@@ -84,7 +96,7 @@
         <div class="fooditem">
 
             <div>
-                <img src="images/caesar-salad.jpg" alt="">
+                <img class="test" src="images/caesar-salad.jpg" alt="">
                 <h2>Caesar Salad</h2>
 
                 <div class="ingredients">
@@ -117,7 +129,7 @@
 
                 </div>
             </div>
-            <div>
+            <!-- <div>
                 <img src="images/avocado-toast.jpg" alt="">
                 <h2>Avocado Toast</h2>
 
@@ -162,7 +174,7 @@
                     <a href="#">cool</a>
 
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- end of carousel structure -->
 
@@ -216,7 +228,7 @@
         <div class="foodinfo-box-price" id="infobox2" style="opacity:0">
 
             <!-- price left ------------------>
-            <div class="price-left">
+            <div class="price-left name-icon-left">
                 <img src="images/assets/price-icon.png" alt="">
                 <h4>PRICE</h4>
             </div>
@@ -247,14 +259,48 @@
             <div class="restaurant-image">
 
                 <h4>Velvet Underground</h4>
-                <h5>Gourmet Burgers</h5>
+                <!-- <h5>Gourmet Burgers</h5> -->
             </div>
 
             <div class="review">
-                <div class="review-left">
+                <div class="review-left name-icon-left">
                     <img src="images/assets/review-icon.png" alt="">
                     <h4>REVIEW</h4>
                 </div>
+
+                <div class="review-right">
+                    <object data="images/Assets/star-selected.svg" type="image/svg+xml"></object>
+                    <object data="images/Assets/star-selected.svg" type="image/svg+xml"></object>
+                    <object data="images/Assets/star-selected.svg" type="image/svg+xml"></object>
+                    <object data="images/Assets/star-selected.svg" type="image/svg+xml"></object>
+                    <object data="images/Assets/star-not-selected.svg" type="image/svg+xml"></object>
+                </div>
+            </div>
+
+            <div class="address">
+                <div class="address-left name-icon-left">
+                    <img src="images/assets/address-icon@2x.png" alt="">
+                    <h4>ADDRESS</h4>
+                </div>
+
+                <div class="address-right">
+                    <p>Main Street Vancouver, BC</p>
+                    <p>V6B 4A2</p>
+                </div>
+            </div>
+
+            <div class="hour">
+                <div class="hour-left name-icon-left">
+                    <img src="images/assets/hour-icon@2x.png" alt="">
+                    <h4>HOUR</h4>
+                </div>
+
+                <div class="hour-right">
+                    <p>Opened</p>
+                    <p>11:00 - 22:00</p>
+                </div>
+
+
             </div>
 
 

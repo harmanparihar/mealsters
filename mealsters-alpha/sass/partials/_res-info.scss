@@ -26,7 +26,7 @@
 }
 
 .foodinfo-wrapper {
-    width: 50vh;
+    width: 90%;
     margin: 20px auto;
 
 }
@@ -53,6 +53,22 @@
     }
 }
 
+// General settings for ICON+INFO information
+.name-icon-left {
+
+    img {
+        margin-top: 1rem;
+        max-width: 30px;
+        max-height: 30px;
+    }
+    h4 {
+        text-align: left;
+        margin-left: .5rem;
+        color: #C7C1BD;
+        font-weight: 400;
+    }
+}
+
 
 /* Price Box   */
 .foodinfo-box-price {
@@ -67,17 +83,6 @@
         flex-direction: row;
         padding: 1rem 1rem 1.5rem 2rem;
 
-        img {
-            margin-top: 1rem;
-            max-width: 30px;
-            max-height: 30px;
-        }
-        h4 {
-            text-align: left;
-            margin-left: .5rem;
-            color: #C7C1BD;
-            font-weight: 400;
-        }
 
     }
 
@@ -149,12 +154,16 @@
         background-size: cover;
         height: 120px;
         border-radius: 8px 8px 0px 0px;
+        position: relative;
 
         h4 {
             color: white;
             margin: 0;
             padding: 0;
-            padding: 50px 2rem 0px 2rem;
+            position: absolute;
+            bottom: 1.5rem;
+            left: 2rem;
+            // padding: 70px 2rem 0px 2rem;
             font-family: $font__heading;
             font-weight: 300;
             font-size: 1.5rem;
@@ -170,28 +179,79 @@
         }
     }
 
+
     .review {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-top: .3rem;
+
+        border-bottom: 2px solid #F0F0F0;
 
         .review-left {
             display: flex;
             flex-direction: row;
             padding: 1rem 1rem 1.5rem 2rem;
 
-            img {
-                margin-top: 1rem;
-                max-width: 30px;
-                max-height: 30px;
-            }
-            h4 {
-                text-align: left;
-                margin-left: .5rem;
-                color: #C7C1BD;
-                font-weight: 400;
+
+        }
+        .review-right {
+            margin-top: 2.1rem;
+            display: flex;
+            justify-self: right;
+            padding-right: 1.9rem;
+
+            object {
+                margin: 0 .1rem;
+                height: 1.5rem;
+                display: block;
+                // margin: 0 auto;
             }
 
         }
     }
+    .address, .hour {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: .3rem;
+
+        border-bottom: 2px solid #F0F0F0;
+
+        .address-left, .hour-left {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem 1rem 1.5rem 2rem;
+        }
+        .address-right, .hour-right {
+
+            max-width: 120px;
+            text-align: right;
+            display: flex;
+            justify-self: right;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            display: block;
+
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            p:nth-of-type(2) {
+                color: #959595;
+            }
+        }
+
+        .hour-right {
+
+            margin-top: 1.5rem;
+
+            p:nth-of-type(1) {
+                color: #8FBA3D;
+            }
+        }
+
+    }
+
+
 }
