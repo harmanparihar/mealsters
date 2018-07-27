@@ -191,7 +191,7 @@ body {
   /* background-image: url("../images/salad.jpg"), linear-gradient(#ffa800, #f2398e); */
   color: white;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to left, rgba(255, 168, 0, 0.8), rgba(242, 57, 142, 0.8)), url("../images/salad.jpg");
+  background: linear-gradient(to left, rgba(255, 168, 0, 0.8), rgba(242, 57, 142, 0.8)), url("../images/caesar-salad.jpg");
   background-size: cover;
   min-height: 100vh; }
 

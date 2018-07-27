@@ -3,6 +3,7 @@
     const user_ref= firebase.database().ref("/users");
     $('form.signup_form').submit(function (event) {
       event.preventDefault();
+      $(".err").html("");
       let name= $("#username").val();
       let pass= $("#password").val();
       pass=CryptoJS.MD5(pass).words[0];
@@ -18,7 +19,7 @@
 
             console.log("Hello");
             if(data.val().password == pass){
-              document.location.href = "database.html";
+              document.location.href = "mainpage.html";
             } else{
                 $(".passworderror").html("Wrong Password!");
                 console.log("Wrong Password entered");
