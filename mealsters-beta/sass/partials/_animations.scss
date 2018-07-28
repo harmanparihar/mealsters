@@ -341,11 +341,13 @@
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(0,0,.13,1);
     animation-fill-mode: forwards;
+    opacity:0;
 }
 .delay1 {animation-delay: 2s;}
 .delay2 {animation-delay: 2.1s;}
 .delay3 {animation-delay: 2.2s;}
 .delay4 {animation-delay: 2.3s;}
+.delay5 {animation-delay: 2.4s;}
 
 @keyframes form-anim {
     0% {

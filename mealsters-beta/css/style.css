@@ -343,6 +343,18 @@ input:focus {
   padding: 10px;
   line-height: 0.9rem;
 }
+.meta div p {
+  margin: 0;
+}
+
+.guest {
+  border: 1px solid white;
+  margin: 0 10px;
+  margin-top: 1rem;
+  padding: 1rem 0 !important;
+  border-radius: 10px;
+  display: block;
+}
 
 /******************************************/
 /*                                        */
@@ -941,6 +953,7 @@ img {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0, 0, 0.13, 1);
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .delay1 {
@@ -957,6 +970,10 @@ img {
 
 .delay4 {
   animation-delay: 2.3s;
+}
+
+.delay5 {
+  animation-delay: 2.4s;
 }
 
 @keyframes form-anim {
