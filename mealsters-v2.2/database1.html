@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--including jquery cdn-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <!--including firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/database1.js"></script>
+    <title>Mealsters</title>
+</head>
+<body class="main">
+    <div class="wrapper">
+        <header>
+            <nav>
+                <i class="menu_icon fas fa-bars"></i>
+                <h1>Mealsters</h1>
+            </nav>
+        </header>
+        <nav>
+            <ul>
+                <li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
+                <li><img src="images/Assets/info-icon.png" alt=""></li>
+                <li><img src="images/Assets/favorite-icon.png" alt=""></li>
+                <li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
+            </ul>
+        </nav>
+
+        <div class="fooditem">
+            <div class="image">
+                <img class="img_space" alt="Food Image" src="images/burger.jpg">
+            </div>
+            <div class="info">
+                <div class="ingredients"></div>
+
+                <div class="price">$13.95</div>
+
+                <div class="res_call">
+                        <a class="res_tel"><img src="images/Assets/phone-icon.png"><br>TELEPHONE</a>
+                        <a class="res_website"><img src="images/Assets/website-icon.png"><br>WEBSITE</a>
+                </div>
+
+                <div class="res_info">
+                    <h3 class="res_name"></h3>
+                    <div class="res_review">
+                        <div class="res_review_icon">
+                            <img src="images/Assets/review-icon.png" alt=""> REVIEW
+                        </div>
+                        <div class="">
+                            <img src="images/Assets/favorite-icon.png" alt="">
+                            <img src="images/Assets/favorite-icon.png" alt="">
+                            <img src="images/Assets/favorite-icon.png" alt="">
+                            <img src="images/Assets/favorite-icon.png" alt="">
+                            <img src="images/Assets/favorite-icon.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="res_address">
+                        <div class="res_address_icon">
+                            <img src="images/Assets/address-icon.png" alt=""> ADDRESS
+                        </div>
+
+                        <div class="res_address_text">
+
+                        </div>
+
+                    </div>
+
+                    <div class="res_hour">
+                        <div class="res_hour_icon">
+                            <img src="images/Assets/hour-icon.png" alt=""> HOUR
+                        </div>
+                        <div class="res_hour_text">
+                            Opened<br>11:20 - 22:20
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

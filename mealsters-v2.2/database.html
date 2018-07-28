@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!--including jquery cdn-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <!--including firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/database.js"></script>
+  <title>Mealsters</title>
+</head>
+<body class="main">
+  <div class="wrapper">
+    <header>
+      <nav>
+        <i class="menu_icon fas fa-bars"></i>
+        <h1>Mealsters</h1>
+      </nav>
+    </header>
+    <div class="fooditem">
+      <div class="image">
+        <img class="img_space" alt="Food Image">
+      </div>
+      <!-- <button class="next">Next</button> -->
+      <div class="info">
+        <h3>Ingredients</h3>
+        <div class="ingredients">
+
+        </div>
+        <div class="res_info">
+          <h3>Restaurant Information</h3>
+          <div class="res_name">
+
+          </div>
+          <div class="res_tel">
+
+          </div>
+          <div class="res_website">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li class="prev"><img src="images/Assets/previous-icon.png" alt=""></li>
+        <li><img src="images/Assets/info-icon.png" alt=""></li>
+        <li><img src="images/Assets/favorite-icon.png" alt=""></li>
+        <li class="next"><img src="images/Assets/next-icon.png" alt="next icon"></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
