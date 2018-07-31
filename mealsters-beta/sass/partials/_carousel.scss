@@ -28,43 +28,45 @@ img {
     height: 55vh;
     object-fit: cover;
 }
+.fooditem {
 
-.slick-slide img {
-    opacity: 0.7;
-    border-radius: 2%;
-    transform: scale(.85);
-    // filter: blur(1px);
-    animation-name: toNormal;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    // filter: drop-shadow(0px 1px 2px hsla(120,0%,0%,.6));
 
+    .slick-slide img {
+        opacity: 0.7;
+        border-radius: 2%;
+        transform: scale(.85);
+        // filter: blur(1px);
+        animation-name: toNormal;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        // filter: drop-shadow(0px 1px 2px hsla(120,0%,0%,.6));
+
+    }
+
+    .slick-active img {
+        opacity: 1;
+        transform: scale(1.0);
+        // filter: blur(0px);
+        animation-name: toActive;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        // filter: drop-shadow(0px 8px 6px hsla(120,0%,0%,.3));
+
+    }
+
+    .slick-slide h2 {
+        opacity: 0;
+    }
+    .slick-active h2 {
+        animation-name: toActiveName;
+        animation-duration: .45s;
+        animation-iteration-count: 1;
+        animation-timing-function: cubic-bezier();
+        opacity: 1;
+        transform: translateY(00%);
+
+    }
 }
-
-.slick-active img {
-    opacity: 1;
-    transform: scale(1.0);
-    // filter: blur(0px);
-    animation-name: toActive;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    // filter: drop-shadow(0px 8px 6px hsla(120,0%,0%,.3));
-
-}
-
-.slick-slide h2 {
-    opacity: 0;
-}
-.slick-active h2 {
-    animation-name: toActiveName;
-    animation-duration: .45s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier();
-    opacity: 1;
-    transform: translateY(00%);
-
-}
-
 @keyframes toActiveName {
     0% {
         opacity: 0;

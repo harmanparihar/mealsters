@@ -19,7 +19,7 @@
 
             console.log("Hello");
             if(data.val().password == pass){
-              document.location.href = "mainpage.html";
+              document.location.href = "tutorial.html";
             } else{
                 $(".passworderror").html("Wrong Password!");
                 console.log("Wrong Password entered");
